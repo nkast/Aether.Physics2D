@@ -736,4 +736,182 @@ namespace tainicom.Aether.Physics2D.Controllers
     
 
 
+    public class ParticleHydrodynamics2Controller : ParticleHydrodynamicsController
+    {
+        
+        #region Pairs Data
+        struct ParticlePair
+        {
+            public int i,j;
+
+            public ParticlePair(int i, int j)
+            {
+                this.i = i;
+                this.j = j;
+            }
+        }
+
+        int PairCount = 0;
+        
+        ParticlePair[] Pair;
+        float[] PairOneMinus_q;
+        float[] PairDistance;
+        
+        #endregion
+
+        public ParticleHydrodynamics2Controller(float h = 1f, int initialParticlesCapacity = 256, int initialPairsCapacity = 20480)
+            : base(h, initialParticlesCapacity)
+        {            
+            Pair = new ParticlePair[initialPairsCapacity];
+            PairOneMinus_q = new float[initialPairsCapacity];
+            PairDistance = new float[initialPairsCapacity];
+        }
+        
+        public void AddPair(int i, int j)
+        {
+            if (PairCount == Pair.Length)
+            {
+                var oldSize = Pair.Length;
+                var newSize = oldSize + 64;
+                Array.Resize(ref Pair, newSize);
+                Array.Resize(ref PairOneMinus_q, newSize);
+                Array.Resize(ref PairDistance, newSize);
+            }
+
+            Pair[PairCount] = new ParticlePair(i,j);
+            PairCount++;
+        }
+        
+        private void UpdatePairs()
+        {
+            PairCount = 0;
+
+            var pll = hashGrid.ParticleLinkedList;
+            foreach (var gridCellKey in hashGrid.GridCellDictionary.Keys)
+            {
+                int startingParticleNodeIndexT, startingParticleNodeIndexTR, startingParticleNodeIndexR, startingParticleNodeIndexBR;
+                if (!hashGrid.GridCellDictionary.TryGetValue(new GridCell(gridCellKey.X, gridCellKey.Y + 1), out startingParticleNodeIndexT))
+                    startingParticleNodeIndexT = -1;
+                if (!hashGrid.GridCellDictionary.TryGetValue(new GridCell(gridCellKey.X + 1, gridCellKey.Y + 1), out startingParticleNodeIndexTR))
+                    startingParticleNodeIndexTR = -1;
+                if (!hashGrid.GridCellDictionary.TryGetValue(new GridCell(gridCellKey.X + 1, gridCellKey.Y), out startingParticleNodeIndexR))
+                    startingParticleNodeIndexR = -1;
+                if (!hashGrid.GridCellDictionary.TryGetValue(new GridCell(gridCellKey.X + 1, gridCellKey.Y - 1), out startingParticleNodeIndexBR))
+                    startingParticleNodeIndexBR = -1;
+
+                int startingParticleNodeIndex = hashGrid.GridCellDictionary[gridCellKey];
+                for (int iNode = startingParticleNodeIndex; iNode != -1; iNode = pll[iNode].NextNodeIndex)
+                {
+                    int i = pll[iNode].ParticleIndex;
+                    var jNode = pll[iNode].NextNodeIndex;
+                    UpdatePairs(i, jNode); // ApplyViscosity to particles in the same cell
+                                        
+                    // we need to check only half of the neibobour cells for pairs. we check only top + right most 
+                    // the other pairs will be updated from the bottom + left most cells
+                    if (startingParticleNodeIndexT != -1)
+                        UpdatePairs(i, startingParticleNodeIndexT);
+                    if (startingParticleNodeIndexTR != -1)
+                        UpdatePairs(i, startingParticleNodeIndexTR);
+                    if (startingParticleNodeIndexR != -1)
+                        UpdatePairs(i, startingParticleNodeIndexR);
+                    if (startingParticleNodeIndexBR != -1)
+                        UpdatePairs(i, startingParticleNodeIndexBR);
+                }
+            }
+        }
+
+        private void UpdatePairs(int i, int startingParticleNodeIndex)
+        {
+            //Vector2 rij, velocityNormal;
+            //float distance;
+            
+            var pll = hashGrid.ParticleLinkedList;
+
+            for (int jNode = startingParticleNodeIndex; jNode != -1; jNode = pll[jNode].NextNodeIndex)
+            {
+                int j = pll[jNode].ParticleIndex;
+
+                // AddPair(i,j);
+                if (PairCount == Pair.Length)
+                {
+                    var oldSize = Pair.Length;
+                    var newSize = oldSize + 1024;
+                    Array.Resize(ref Pair, newSize);
+                    Array.Resize(ref PairOneMinus_q, newSize);
+                    Array.Resize(ref PairDistance, newSize);
+                }
+
+                Pair[PairCount] = new ParticlePair(i, j);
+                PairCount++;
+            }
+        }
+        
+        protected override void ComputeDensity(float dt)
+        {
+            //base.ComputeDensity(dt);
+            //return;
+
+            Array.Clear(Density, 0, particleCount);
+            Array.Clear(DensityNear, 0, particleCount);
+            
+            UpdatePairs();
+
+            Vector2 rij;
+                        
+            var pll = hashGrid.ParticleLinkedList;
+            for (int pairIndex = 0; pairIndex < PairCount; pairIndex++)
+            {
+                var pair = Pair[pairIndex];
+                
+                Vector2.Subtract(ref Position[pair.j], ref Position[pair.i], out rij);
+                float sq_distance = rij.LengthSquared();
+                if ((sq_distance > this.sq_h))
+                {
+                    PairOneMinus_q[pairIndex] = 0;
+                    continue;
+                }
+
+                float distance = (float)Math.Sqrt(sq_distance);                
+                PairDistance[pairIndex] = distance;
+                float q = distance * inv_h; // q = distance / h;
+
+                float oneMinus_q = (1 - q);
+                PairOneMinus_q[pairIndex] = oneMinus_q;
+
+                float oneMinus_q2 = oneMinus_q * oneMinus_q;
+                Density[pair.i] += oneMinus_q2;
+                Density[pair.j] += oneMinus_q2;
+                float oneMinus_q3 = oneMinus_q2 * oneMinus_q;
+                DensityNear[pair.i] += oneMinus_q3;
+                DensityNear[pair.j] += oneMinus_q3;
+            }
+        }
+        protected override void ApplyPressure(float dt)
+        {
+            var dt2 = dt * dt;
+            Vector2 rij;
+            
+            var pll = hashGrid.ParticleLinkedList;
+            for (int pairIndex = 0; pairIndex < PairCount; pairIndex++)
+            {
+                float oneMinus_q = PairOneMinus_q[pairIndex];
+                if (oneMinus_q == 0)
+                    continue;
+                Debug.Assert(oneMinus_q > 0);
+
+                var pair = Pair[pairIndex];
+                                
+                float distance = PairDistance[pairIndex];
+
+                Vector2.Subtract(ref Position[pair.j], ref Position[pair.i], out rij);
+                Vector2.Divide(ref rij, distance, out rij); // //normalized rij
+
+                float D = (dt2 * (Pressure[pair.i] * oneMinus_q + PressureNear[pair.i] * oneMinus_q * oneMinus_q));
+                Vector2.Multiply(ref rij, (D * 0.5f), out rij);
+
+                Vector2.Subtract(ref Position[pair.i], ref rij, out Position[pair.i]);
+                Vector2.Add(     ref Position[pair.j], ref rij, out Position[pair.j]);
+            }
+        }
+    }
 }
