@@ -37,7 +37,7 @@ namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
             _pixel = new Texture2D(GameInstance.GraphicsDevice, 1, 1);
             _pixel.SetData<Color>(new[] {Color.White});
             
-            _controller = new ParticleHydrodynamicsController(2.0f, 2048);
+            _controller = new ParticleHydrodynamics2Controller(2.0f, 2048);
             World.Add(_controller);
         }
 
