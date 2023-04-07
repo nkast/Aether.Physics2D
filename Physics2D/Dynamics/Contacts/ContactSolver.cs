@@ -36,7 +36,7 @@ using tainicom.Aether.Physics2D.Common;
 using Complex = tainicom.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
 using System.Threading;
 using System.Threading.Tasks;
 #endif
@@ -380,7 +380,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
                 // We avoid SolveVelocityConstraintsWaitLock.Wait(); because it spins a few milliseconds before going into sleep. Going into sleep(0) directly in a while loop is faster.
                 while (SolveVelocityConstraintsWaitLock.CurrentCount > 0)
                     Thread.Sleep(0);
-#elif PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#elif PORTABLE40 || PORTABLE45 || W10
                 Parallel.For(0, batches, (i) =>
                 {
                     var start = i * batchSize;
@@ -448,7 +448,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
             {
                 ContactVelocityConstraint vc = _velocityConstraints[i];
 
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
                 // find lower order item
                 int orderedIndexA = vc.indexA;
                 int orderedIndexB = vc.indexB;
@@ -774,7 +774,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
                 _velocities[indexB].v = vB;
                 _velocities[indexB].w = wB;
 
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexB], 0);
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexA], 0);
 #endif
@@ -810,7 +810,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
                 var batchSize = (int)Math.Ceiling((float)_count / System.Environment.ProcessorCount);
                 var batches = (int)Math.Ceiling((float)_count / batchSize);
 
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
                 Parallel.For(0, batches, (i) =>
                 {
                     var start = i * batchSize;
@@ -841,7 +841,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
             {
                 ContactPositionConstraint pc = _positionConstraints[i];
 
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
                 // Find lower order item.
                 int orderedIndexA = pc.indexA;
                 int orderedIndexB = pc.indexB;
@@ -927,7 +927,7 @@ namespace tainicom.Aether.Physics2D.Dynamics.Contacts
                 _positions[indexB].c = cB;
                 _positions[indexB].a = aB;
 
-#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10 || W8_1 || WP8_1
+#if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
                 // Unlock bodies.
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexB], 0);
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexA], 0);
