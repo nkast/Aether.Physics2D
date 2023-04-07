@@ -58,13 +58,13 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.WINDOWS.MG.csproj">
+    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NET40.MG.csproj">
       <Project>{2ED9AD24-DFBA-441D-BCFB-EAA9520D804D}</Project>
-      <Name>Aether.Physics2D.Diagnostics.WINDOWS.MG</Name>
+      <Name>Aether.Physics2D.Diagnostics.NET40.MG</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.WINDOWS.MG.csproj">
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.MG.csproj">
       <Project>{58A4F378-3FC5-4616-BC62-5FF5DF676627}</Project>
-      <Name>Aether.Physics2D.WINDOWS.MG</Name>
+      <Name>Aether.Physics2D.NET40.MG</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\NewSamples\NewSamples.projitems" Label="Shared" />

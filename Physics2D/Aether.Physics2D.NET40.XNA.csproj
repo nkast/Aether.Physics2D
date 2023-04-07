@@ -42,7 +42,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\XNA.Windows\</OutputPath>
+    <OutputPath>..\bin\Debug\NET40.XNA\</OutputPath>
     <DefineConstants>TRACE;DEBUG;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;XNA;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -55,7 +55,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\XNA.Windows\</OutputPath>
+    <OutputPath>..\bin\Release\NET40.XNA\</OutputPath>
     <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;XNA;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

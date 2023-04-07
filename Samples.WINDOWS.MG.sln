@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testbed.WINDOWS.MG", "Sampl
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Testbed", "Samples\Testbed\Testbed.shproj", "{4A534FA0-4CF4-4CBD-98E3-1FDC22A5770B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Physics2D.Diagnostics.WINDOWS.MG", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.WINDOWS.MG.csproj", "{2ED9AD24-DFBA-441D-BCFB-EAA9520D804D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Physics2D.Diagnostics.NET40.MG", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NET40.MG.csproj", "{2ED9AD24-DFBA-441D-BCFB-EAA9520D804D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WINDOWS.MG", "Samples\Samples.WindowsDX\Samples.WINDOWS.MG.csproj", "{E4BBD53B-8677-4C90-9CA2-9B8FC186E8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Physics2D.WINDOWS.MG", "Physics2D\Aether.Physics2D.WINDOWS.MG.csproj", "{58A4F378-3FC5-4616-BC62-5FF5DF676627}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Physics2D.NET40.MG", "Physics2D\Aether.Physics2D.NET40.MG.csproj", "{58A4F378-3FC5-4616-BC62-5FF5DF676627}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{95CC7850-C716-48DC-84EC-4735CDABF818}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Content.Pipeline", "Aether.Content.Pipeline", "{647EE16B-DEB6-4BB0-9383-9F9BF714BEB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physics2DImporters.WINDOWS.MG", "Content.Pipeline\Physics2DImporters\Physics2DImporters.WINDOWS.MG.csproj", "{14B7BD4A-BD70-4564-BD11-8F0036BA20E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physics2DImporters.NET40.MG", "Content.Pipeline\Physics2DImporters\Physics2DImporters.NET40.MG.csproj", "{14B7BD4A-BD70-4564-BD11-8F0036BA20E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.WINDOWS.MG", "Samples\HelloWorld.WindowsDX\HelloWorld.WINDOWS.MG.csproj", "{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}"
 EndProject

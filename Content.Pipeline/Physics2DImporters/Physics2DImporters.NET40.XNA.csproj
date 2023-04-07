@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <OutputPath>..\..\bin\Debug\XNA.Windows\</OutputPath>
+    <OutputPath>..\..\bin\Debug\NET40.XNA\</OutputPath>
     <DefineConstants>TRACE;DEBUG;WINDOWS;XNA</DefineConstants>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\XNA.Windows\</OutputPath>
+    <OutputPath>..\..\bin\Release\NET40.XNA\</OutputPath>
     <DefineConstants>TRACE;WINDOWS;XNA</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -72,9 +72,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.WINDOWS.XNA.csproj">
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.XNA.csproj">
       <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
-      <Name>Aether.Physics2D.WINDOWS.XNA</Name>
+      <Name>Aether.Physics2D.NET40.XNA</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

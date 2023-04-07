@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\MG.Windows\</OutputPath>
+    <OutputPath>..\..\bin\Debug\NET40.MG\</OutputPath>
     <DefineConstants>TRACE;DEBUG;WINDOWS;MG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\MG.Windows\</OutputPath>
+    <OutputPath>..\..\bin\Release\NET40.MG\</OutputPath>
     <DefineConstants>TRACE;WINDOWS;MG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -67,9 +67,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.WINDOWS.MG.csproj">
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.MG.csproj">
       <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
-      <Name>Aether.Physics2D.WINDOWS.MG</Name>
+      <Name>Aether.Physics2D.NET40.MG</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

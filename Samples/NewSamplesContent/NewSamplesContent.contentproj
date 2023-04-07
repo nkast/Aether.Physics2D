@@ -206,9 +206,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Content.Pipeline\Physics2DImporters\Physics2DImporters.WINDOWS.XNA.csproj">
+    <ProjectReference Include="..\..\Content.Pipeline\Physics2DImporters\Physics2DImporters.NET40.XNA.csproj">
       <Project>{7CB361CC-38D3-4F24-A0B8-10363471F9AB}</Project>
-      <Name>Physics2DImporters.WINDOWS.XNA</Name>
+      <Name>Physics2DImporters.NET40.XNA</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
