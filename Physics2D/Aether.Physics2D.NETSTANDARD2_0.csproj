@@ -7,18 +7,18 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0\</BaseIntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>DEBUG;TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Debug\netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Release\netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

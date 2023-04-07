@@ -7,18 +7,18 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0.MG\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.MG\</BaseIntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Debug\MG.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Release\MG.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

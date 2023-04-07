@@ -7,18 +7,18 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0.MG.Common\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.MG.Common\</BaseIntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Debug\MG.Common.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Release\MG.Common.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -100,8 +100,6 @@
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\TextureTools\TextureConverter.cs" />
     <Compile Include="Common\Vertices.cs" />
-    <Compile Include="Content\BodyContainer.cs" />
-    <Compile Include="Content\PolygonContainer.cs" />
     <Compile Include="Controllers\AbstractForceController.cs" />
     <Compile Include="Controllers\BuoyancyController.cs" />
     <Compile Include="Controllers\Controller.cs" />

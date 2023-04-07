@@ -20,6 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\NET40.MG\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Debug\NET40.MG\</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;DEBUG;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;MG;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,6 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\NET40.MG\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Release\NET40.MG\</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;MG;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
