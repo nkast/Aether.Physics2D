@@ -4,13 +4,13 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common.TextureTools
+namespace nkast.Aether.Physics2D.Common.TextureTools
 {
     // Ported by Matthew Bettcher - Feb 2011
 

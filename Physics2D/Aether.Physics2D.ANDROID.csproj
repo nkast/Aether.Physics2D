@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{ADEB597D-77B9-4912-98F0-D8EDE600D883}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D</RootNamespace>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>

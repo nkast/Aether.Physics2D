@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Content.Pipeline</RootNamespace>
+    <RootNamespace>nkast.Aether.Content.Pipeline</RootNamespace>
     <AssemblyName>Aether.Content.Pipeline.Physics2DImporters</AssemblyName>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

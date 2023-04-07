@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using tainicom.Aether.Physics2D.Diagnostics;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Dynamics;
 
-namespace tainicom.Aether.Physics2D.Samples.DrawingSystem
+namespace nkast.Aether.Physics2D.Samples.DrawingSystem
 {
     public class ShadowMap2D
     {

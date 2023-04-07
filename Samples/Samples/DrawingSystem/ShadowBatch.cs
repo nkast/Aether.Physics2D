@@ -3,12 +3,12 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 
-namespace tainicom.Aether.Physics2D.Samples.DrawingSystem
+namespace nkast.Aether.Physics2D.Samples.DrawingSystem
 {
     public class ShadowBatch
     {

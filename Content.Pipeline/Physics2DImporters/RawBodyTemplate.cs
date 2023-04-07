@@ -4,10 +4,10 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     struct RawFixtureTemplate
     {

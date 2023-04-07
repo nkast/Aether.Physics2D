@@ -7,9 +7,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics;
 
-namespace tainicom.Aether.Physics2D.Samples
+namespace nkast.Aether.Physics2D.Samples
 {
     public class HelloWorldComponent : DrawableGameComponent
     {

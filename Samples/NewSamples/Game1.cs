@@ -9,10 +9,10 @@ using System.Reflection;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 
-namespace tainicom.Aether.Physics2D.Samples
+namespace nkast.Aether.Physics2D.Samples
 {
     /// <summary>
     /// This is the main type for the samples

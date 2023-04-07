@@ -12,13 +12,13 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using tainicom.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 using Matrix = Microsoft.Xna.Framework.Matrix;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common
+namespace nkast.Aether.Physics2D.Common
 {
     public enum PolygonError
     {

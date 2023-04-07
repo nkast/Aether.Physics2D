@@ -6,12 +6,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common.TextureTools;
+using nkast.Aether.Physics2D.Common.TextureTools;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common
+namespace nkast.Aether.Physics2D.Common
 {
     public static class PolygonTools
     {

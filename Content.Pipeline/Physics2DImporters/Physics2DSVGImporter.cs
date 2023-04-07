@@ -8,11 +8,11 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Xml;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     [ContentImporter(".svg", DisplayName = "Physics2D SVG Importer", DefaultProcessor = "Physics2DBodyProcessor")]
     class Physics2DSVGImporter : ContentImporter<List<RawBodyTemplate>>

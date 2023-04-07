@@ -5,7 +5,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
+namespace nkast.Aether.Physics2D.Samples.Testbed.Framework
 {
     public static class Rand
     {

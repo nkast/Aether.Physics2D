@@ -6,7 +6,7 @@
 #if SILVERLIGHT
 using System;
 
-namespace tainicom.Aether.Physics2D.Common
+namespace nkast.Aether.Physics2D.Common
 {
     // Source: http://www.wiredprairie.us/blog/index.php/archives/723
 

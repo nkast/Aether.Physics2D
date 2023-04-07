@@ -22,7 +22,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed
+namespace nkast.Aether.Physics2D.Samples.Testbed
 {
     internal static class Program
     {

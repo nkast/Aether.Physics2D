@@ -4,13 +4,13 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Diagnostics;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics.Joints;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     public class PhysicsDemoScreen : GameScreen
     {

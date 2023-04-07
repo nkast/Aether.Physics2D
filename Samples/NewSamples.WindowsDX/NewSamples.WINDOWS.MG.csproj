@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D.Samples.NewSamples</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D.Samples.NewSamples</RootNamespace>
     <AssemblyName>Samples.NewSamples</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>

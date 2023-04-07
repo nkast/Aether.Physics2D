@@ -29,12 +29,12 @@
 
 using System;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics.Joints
+namespace nkast.Aether.Physics2D.Dynamics.Joints
 {
     public enum JointType
     {

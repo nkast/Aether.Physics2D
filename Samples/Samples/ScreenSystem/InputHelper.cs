@@ -6,13 +6,13 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Samples.DrawingSystem;
+using nkast.Aether.Physics2D.Samples.DrawingSystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     ///   an enum of all available mouse buttons.

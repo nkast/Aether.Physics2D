@@ -3,17 +3,17 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 #if WINDOWS
 using System.Diagnostics;
 using System.IO;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.Decomposition;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.Decomposition;
+using nkast.Aether.Physics2D.Dynamics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     public class TriangulationTest : Test
     {

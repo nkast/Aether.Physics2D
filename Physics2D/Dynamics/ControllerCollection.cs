@@ -3,9 +3,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Controllers;
+using nkast.Aether.Physics2D.Controllers;
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     public class ControllerCollection : IEnumerable<Controller>
         , ICollection<Controller>, IList<Controller>

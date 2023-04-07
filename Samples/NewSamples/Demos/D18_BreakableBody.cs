@@ -8,18 +8,18 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.PhysicsLogic;
-using tainicom.Aether.Physics2D.Content;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Samples.Demos.Prefabs;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.PhysicsLogic;
+using nkast.Aether.Physics2D.Content;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Samples.Demos.Prefabs;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Dynamics.Joints;
 
-namespace tainicom.Aether.Physics2D.Samples.Demos
+namespace nkast.Aether.Physics2D.Samples.Demos
 {
     internal class D18_BreakableBody : PhysicsDemoScreen
     {
@@ -90,7 +90,7 @@ namespace tainicom.Aether.Physics2D.Samples.Demos
                 {   
                     shapes.Add(f.Shape);
                 }
-                _breakableCookie[i] = new tainicom.Aether.Physics2D.Common.PhysicsLogic.BreakableBody(World, shapes);
+                _breakableCookie[i] = new nkast.Aether.Physics2D.Common.PhysicsLogic.BreakableBody(World, shapes);
 
                 _breakableCookie[i].Strength = 120f;
                 _breakableCookie[i].MainBody.Position = new Vector2(-15.0f + 15f * i, 0f);

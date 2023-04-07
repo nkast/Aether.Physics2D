@@ -4,11 +4,11 @@
  */
 
 using System.Text;
-using tainicom.Aether.Physics2D.Content;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Content;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.Demos
+namespace nkast.Aether.Physics2D.Samples.Demos
 {
     internal class D16_SVGtoPolygon : PhysicsDemoScreen
     {

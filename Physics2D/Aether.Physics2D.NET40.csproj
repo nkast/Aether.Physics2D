@@ -8,7 +8,7 @@
     <ProjectGuid>{C65B4E93-DB9A-49D7-9017-41D23A5ED796}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

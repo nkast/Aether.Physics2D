@@ -8,7 +8,7 @@
     <ProjectGuid>{2ED9AD24-DFBA-441D-BCFB-EAA9520D804D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D.Diagnostics</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
     <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>

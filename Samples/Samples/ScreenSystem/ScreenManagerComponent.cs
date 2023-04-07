@@ -4,13 +4,13 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Samples.DrawingSystem;
+using nkast.Aether.Physics2D.Samples.DrawingSystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input.Touch;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     /// The screen manager is a component which manages one or more GameScreen

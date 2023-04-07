@@ -6,14 +6,14 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.Decomposition;
-using tainicom.Aether.Physics2D.Common.PolygonManipulation;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.Decomposition;
+using nkast.Aether.Physics2D.Common.PolygonManipulation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     [ContentProcessor(DisplayName = "Physics2D Texture Processor")]
     class Physics2DTextureProcessor : ContentProcessor<Texture2DContent, List<Vertices>>

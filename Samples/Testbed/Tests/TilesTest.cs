@@ -27,14 +27,14 @@
 
 using System;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     /// <summary>
     /// This stress tests the dynamic tree broad-phase. This also shows that tile

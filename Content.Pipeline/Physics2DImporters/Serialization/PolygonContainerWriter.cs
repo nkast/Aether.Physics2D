@@ -4,12 +4,12 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Content;
+using nkast.Aether.Physics2D.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     [ContentTypeWriter]
     public class PolygonContainerWriter : ContentTypeWriter<PolygonContainer>

@@ -4,7 +4,7 @@ Aether.Physics2D is a 2D collision detection system.
 
 [![Discord](https://img.shields.io/discord/780484381961093172?style=flat)](https://discord.gg/95nPEjZ6mu)
 
-Documentation: https://tainicom.github.io/Aether.Physics2D/
+Documentation: https://nkast.github.io/Aether.Physics2D/
 
 ![3DCameraDemo](Documentation//Images/3DCameraDemo.png)
 
@@ -41,6 +41,6 @@ https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.MG
 https://www.nuget.org/packages/Aether.Physics2D.Diagnostics
  
 
-https://github.com/tainicom/Aether.Physics2D/releases/tag/v1.7
+https://github.com/nkast/Aether.Physics2D/releases/tag/v1.7
 
 ![LightAndShadowsDemo](Documentation//Images/LightAndShadowsDemo.png)

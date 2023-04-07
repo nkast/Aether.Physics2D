@@ -4,15 +4,15 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Common.PhysicsLogic;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Common.PhysicsLogic;
+using nkast.Aether.Physics2D.Dynamics;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 using Curve = Microsoft.Xna.Framework.Curve;
 using CurveKey = Microsoft.Xna.Framework.CurveKey;
 #endif
 
-namespace tainicom.Aether.Physics2D.Controllers
+namespace nkast.Aether.Physics2D.Controllers
 {
     public abstract class AbstractForceController : Controller
     {

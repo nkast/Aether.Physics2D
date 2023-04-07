@@ -29,16 +29,16 @@
 
 using System;
 using System.IO;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Diagnostics;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Dynamics.Joints;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
+namespace nkast.Aether.Physics2D.Samples.Testbed.Framework
 {
     public class Test
     {

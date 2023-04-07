@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D.Samples.NewSamples</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D.Samples.NewSamples</RootNamespace>
     <AssemblyName>Samples.NewSamples</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>

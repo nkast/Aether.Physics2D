@@ -31,14 +31,14 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Collision
+namespace nkast.Aether.Physics2D.Collision
 {
     internal enum ContactFeatureType : byte
     {

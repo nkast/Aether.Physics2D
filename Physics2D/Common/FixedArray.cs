@@ -27,7 +27,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Common
+namespace nkast.Aether.Physics2D.Common
 {
     public struct FixedArray2<T>
     {

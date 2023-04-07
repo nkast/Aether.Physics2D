@@ -31,12 +31,12 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Diagnostics;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
-using tainicom.Aether.Physics2D.Samples.Testbed.Tests;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Samples.Testbed.Tests;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed
+namespace nkast.Aether.Physics2D.Samples.Testbed
 {
     /// <summary>
     /// This is the main type for your game

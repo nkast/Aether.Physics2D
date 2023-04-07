@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
+namespace nkast.Aether.Physics2D.Samples.Testbed.Framework
 {
     internal class ControlPanel : DrawableGameComponent
     {

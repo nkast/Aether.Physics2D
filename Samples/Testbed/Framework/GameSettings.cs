@@ -3,7 +3,7 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
+namespace nkast.Aether.Physics2D.Samples.Testbed.Framework
 {
     public class GameSettings
     {

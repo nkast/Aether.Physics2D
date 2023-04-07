@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Aether.Physics2D")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("tainicom LTD")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Aether.Physics2D")]
 [assembly: AssemblyCopyright("Copyright Ian Qvist © 2013, Copyright © Kastellanos Nikolaos 2015-2023")]
 [assembly: AssemblyTrademark("Aether Engine (tm)")]

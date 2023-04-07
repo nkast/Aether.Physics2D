@@ -7,7 +7,7 @@ using System;
 using System.Globalization;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     /// Displays the FPS

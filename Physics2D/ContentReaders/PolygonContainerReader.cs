@@ -3,10 +3,10 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 using Microsoft.Xna.Framework.Content;
 
-namespace tainicom.Aether.Physics2D.Content
+namespace nkast.Aether.Physics2D.Content
 {
     public class PolygonContainerReader : ContentTypeReader<PolygonContainer>
     {

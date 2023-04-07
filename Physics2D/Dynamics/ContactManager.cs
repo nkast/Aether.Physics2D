@@ -28,10 +28,10 @@
 */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     public class ContactManager
     {

@@ -5,12 +5,12 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition
+namespace nkast.Aether.Physics2D.Common.Decomposition
 {
     //From phed rev 36: http://code.google.com/p/phed/source/browse/trunk/Polygon.cpp
 

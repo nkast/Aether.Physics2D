@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Content.Pipeline</RootNamespace>
+    <RootNamespace>nkast.Aether.Content.Pipeline</RootNamespace>
     <AssemblyName>Aether.Content.Pipeline.Physics2DImporters</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

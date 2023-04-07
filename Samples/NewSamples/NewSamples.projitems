@@ -6,7 +6,7 @@
     <SharedGUID>636BBB3D-346B-41F6-8F7E-7E26A11C4BEE</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>tainicom.Aether.Physics2D.Samples.NewSamples</Import_RootNamespace>
+    <Import_RootNamespace>nkast.Aether.Physics2D.Samples.NewSamples</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Demos\D17_SVGtoBody.cs" />

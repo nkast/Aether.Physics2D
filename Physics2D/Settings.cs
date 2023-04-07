@@ -26,9 +26,9 @@
 */
 
 using System;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 
-namespace tainicom.Aether.Physics2D
+namespace nkast.Aether.Physics2D
 {
     public static class Settings
     {

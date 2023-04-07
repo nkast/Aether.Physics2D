@@ -6,13 +6,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.Decomposition;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.Decomposition;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     [ContentProcessor(DisplayName = "Physics2D Body Processor")]
     class BodyProcessor : ContentProcessor<List<RawBodyTemplate>, BodyContainer>

@@ -9,19 +9,19 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Controllers;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Controllers;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Dynamics.Joints;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Diagnostics
+namespace nkast.Aether.Physics2D.Diagnostics
 {
     /// <summary>
     /// A debug view shows you what happens inside the physics engine. You can view

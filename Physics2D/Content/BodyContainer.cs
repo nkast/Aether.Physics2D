@@ -4,10 +4,10 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Dynamics;
 
-namespace tainicom.Aether.Physics2D.Content
+namespace nkast.Aether.Physics2D.Content
 {
     public class FixtureTemplate
     {

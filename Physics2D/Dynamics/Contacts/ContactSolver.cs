@@ -29,11 +29,11 @@
 
 using System;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 #if NET40 || NET45 || NETSTANDARD2_0 || PORTABLE40 || PORTABLE45 || W10
@@ -41,7 +41,7 @@ using System.Threading;
 using System.Threading.Tasks;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics.Contacts
+namespace nkast.Aether.Physics2D.Dynamics.Contacts
 {
     public sealed class ContactPositionConstraint
     {

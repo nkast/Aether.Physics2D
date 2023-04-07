@@ -29,10 +29,10 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     class SVGPathParser
     {

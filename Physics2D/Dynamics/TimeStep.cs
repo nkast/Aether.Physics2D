@@ -22,12 +22,12 @@
 * 3. This notice may not be removed or altered from any source distribution. 
 */
 
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     /// <summary>
     /// This is an internal structure.

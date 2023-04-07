@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2018 Kastellanos Nikolaos
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     public struct SolverIterations
     {

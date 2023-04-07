@@ -9,7 +9,7 @@ using System.ComponentModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     [ContentProcessor(DisplayName = "Physics2D Polygon Processor")]
     class PolygonProcessor : ContentProcessor<List<RawBodyTemplate>, PolygonContainer>

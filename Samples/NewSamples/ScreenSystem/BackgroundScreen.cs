@@ -4,10 +4,10 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     /// The background screen sits behind all the other menu screens.
