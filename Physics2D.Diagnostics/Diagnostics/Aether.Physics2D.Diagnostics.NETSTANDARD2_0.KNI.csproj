@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
+    <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
+
+    <OutputPath>..\..\bin\$(Configuration)\netstandard2.0.KNI\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.KNI\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DebugView.cs" />
+    <Compile Include="DebugViewBase.cs" />
+    <Compile Include="DebugViewFlags.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IPrimitiveBatch.cs" />
+    <Compile Include="PrimitiveBatch.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.NETSTANDARD.KNI.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Content\DiagnosticsFont.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
+      <ExcludeAssets>*</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.9.9001">
+      <ExcludeAssets>*</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
+  </ItemGroup>
+
+</Project>
