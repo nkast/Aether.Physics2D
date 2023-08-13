@@ -84,7 +84,7 @@ namespace nkast.Aether.Content.Pipeline
 
         public override string GetRuntimeReader(TargetPlatform targetPlatform)
         {
-            return "nkast.Aether.Physics2D.Content.BodyContainerReader, Aether.Physics2D";
+            return "nkast.Aether.Physics2D.Content.BodyContainerReader, Aether.Physics2D.Content";
         }
     }
 }

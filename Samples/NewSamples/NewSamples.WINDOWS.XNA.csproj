@@ -142,6 +142,10 @@
       <Project>{90A1DCD0-3286-443A-8862-D7CFB6F8FDB3}</Project>
       <Name>Aether.Physics2D.Diagnostics.NET40.XNA</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Physics2D.Content\Aether.Physics2D.Content.NET40.XNA.csproj">
+      <Project>{45834BDE-3858-4BDC-8DDA-D8EDD3FC78ED}</Project>
+      <Name>Aether.Physics2D.Content.NET40.XNA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.XNA.csproj">
       <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
       <Name>Aether.Physics2D.NET40.XNA</Name>

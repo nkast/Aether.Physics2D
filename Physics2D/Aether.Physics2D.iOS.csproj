@@ -108,13 +108,6 @@
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\TextureTools\TextureConverter.cs" />
     <Compile Include="Common\Vertices.cs" />
-    <Compile Include="Content\BodyContainer.cs" />
-    <Compile Include="Content\BodyTemplate.cs" />
-    <Compile Include="Content\FixtureTemplate.cs" />
-    <Compile Include="Content\Polygon.cs" />
-    <Compile Include="Content\PolygonContainer.cs" />
-    <Compile Include="ContentReaders\BodyContainerReader.cs" />
-    <Compile Include="ContentReaders\PolygonContainerReader.cs" />
     <Compile Include="Controllers\AbstractForceController.cs" />
     <Compile Include="Controllers\BuoyancyController.cs" />
     <Compile Include="Controllers\Controller.cs" />

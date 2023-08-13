@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.WINDOWS.MG", "Sa
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelloWorld", "Samples\HelloWorld\HelloWorld.shproj", "{9788674C-C031-4604-ADF8-86FF678FCAB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Physics2D.Content.NET40.MG", "Physics2D.Content\Aether.Physics2D.Content.NET40.MG.csproj", "{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Samples\Testbed\Testbed.projitems*{4a534fa0-4cf4-4cbd-98e3-1fdc22a5770b}*SharedItemsImports = 13
@@ -65,6 +67,10 @@ Global
 		{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{4A534FA0-4CF4-4CBD-98E3-1FDC22A5770B} = {95CC7850-C716-48DC-84EC-4735CDABF818}
 		{72DCF07D-A710-4BB9-84D4-B5C11313929C} = {95CC7850-C716-48DC-84EC-4735CDABF818}
 		{9788674C-C031-4604-ADF8-86FF678FCAB1} = {95CC7850-C716-48DC-84EC-4735CDABF818}
+		{195E1F44-7C9D-4FCF-8EF3-2AFB7866D4CE} = {647EE16B-DEB6-4BB0-9383-9F9BF714BEB1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A47FC0B-72D2-48AA-941E-83B5F7BF4498}

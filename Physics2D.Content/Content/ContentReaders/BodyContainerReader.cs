@@ -57,7 +57,8 @@ namespace nkast.Aether.Physics2D.Content
                                 }
                                 PolygonShape poly = new PolygonShape(verts, density);
                                 Vector2 massDataCentroid = input.ReadVector2();
-                                poly.MassData.Centroid = massDataCentroid;
+                                System.Diagnostics.Debug.Assert(poly.MassData.Centroid == massDataCentroid);
+                                //poly.MassData.Centroid = massDataCentroid;
                                 fixture.Shape = poly;
                             } break;
                         case ShapeType.Edge:

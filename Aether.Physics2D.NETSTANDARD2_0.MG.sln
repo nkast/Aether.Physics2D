@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Content.Pipeline", "Aether.Content.Pipeline", "{B00D3507-DA5E-4C0A-8587-5B9087CE1D39}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Content.NETSTANDARD2_0.MG", "Physics2D.Content\Aether.Physics2D.Content.NETSTANDARD2_0.MG.csproj", "{F2D894EF-6723-440D-A27F-35271647BB38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +27,17 @@ Global
 		{261279CF-D11F-49C1-A0FE-9F3DE3D4975F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{261279CF-D11F-49C1-A0FE-9F3DE3D4975F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{261279CF-D11F-49C1-A0FE-9F3DE3D4975F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D894EF-6723-440D-A27F-35271647BB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D894EF-6723-440D-A27F-35271647BB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D894EF-6723-440D-A27F-35271647BB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D894EF-6723-440D-A27F-35271647BB38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{261279CF-D11F-49C1-A0FE-9F3DE3D4975F} = {38EA4C8F-46F2-4463-922D-CF36279C04B3}
+		{F2D894EF-6723-440D-A27F-35271647BB38} = {B00D3507-DA5E-4C0A-8587-5B9087CE1D39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5141B3E8-D12C-461F-B717-C0E8F7151219}
