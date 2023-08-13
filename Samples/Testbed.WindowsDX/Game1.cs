@@ -263,7 +263,7 @@ namespace nkast.Aether.Physics2D.Samples.Testbed
                 Vector3 beginPos = new Vector3(_mouseMoveBeginState.Value.X, _mouseMoveBeginState.Value.Y, 0f);
                 Vector3 pos = new Vector3(_inputState.MouseState.X, _inputState.MouseState.Y, 0f);
 
-#if MG
+#if KNI
                 if (Mouse.IsRawInputAvailable)
                 {
                     beginPos = new Vector3(_mouseMoveBeginState.Value.RawX, _mouseMoveBeginState.Value.RawY, 0f);
