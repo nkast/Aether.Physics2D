@@ -4,12 +4,11 @@
  */
 
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Dynamics;
 using Microsoft.Xna.Framework;
 
 namespace nkast.Aether.Content.Pipeline
 {
-    struct RawFixtureTemplate
+    struct RawFixtureTemplateContent
     {
         public string Path;
         public string Name;
@@ -19,11 +18,4 @@ namespace nkast.Aether.Content.Pipeline
         public float Restitution;
     }
 
-    struct RawBodyTemplate
-    {
-        public List<RawFixtureTemplate> Fixtures;
-        public string Name;
-        public float Mass;
-        public BodyType BodyType;
-    }
 }

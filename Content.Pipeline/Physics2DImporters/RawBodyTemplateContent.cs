@@ -4,13 +4,17 @@
  */
 
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision.Shapes;
+using Microsoft.Xna.Framework;
 using nkast.Aether.Physics2D.Dynamics;
 
-namespace nkast.Aether.Physics2D.Content
+namespace nkast.Aether.Content.Pipeline
 {
-    public class BodyContainer : Dictionary<string, BodyTemplate> 
+    struct RawBodyTemplateContent
     {
-
+        public List<RawFixtureTemplateContent> Fixtures;
+        public string Name;
+        public float Mass;
+        public BodyType BodyType;
     }
+
 }

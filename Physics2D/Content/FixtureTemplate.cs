@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using nkast.Aether.Physics2D.Collision.Shapes;
 using nkast.Aether.Physics2D.Dynamics;
 
-namespace nkast.Aether.Content.Pipeline
+namespace nkast.Aether.Physics2D.Content
 {
     public class FixtureTemplate
     {
@@ -16,18 +16,4 @@ namespace nkast.Aether.Content.Pipeline
         public float Friction;
         public string Name;
     }
-
-    public class BodyTemplate
-    {
-        public List<FixtureTemplate> Fixtures;
-        public float Mass;
-        public BodyType BodyType;
-
-        public BodyTemplate()
-        {
-            Fixtures = new List<FixtureTemplate>();
-        }
-    }
-
-    public class BodyContainer : Dictionary<string, BodyTemplate> { }
 }

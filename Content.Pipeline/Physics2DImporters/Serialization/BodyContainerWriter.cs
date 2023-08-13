@@ -5,27 +5,26 @@
 
 using System;
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
+using nkast.Aether.Physics2D.Collision.Shapes;
 
 namespace nkast.Aether.Content.Pipeline
 {
     [ContentTypeWriter]
-    public class BodyContainerWriter : ContentTypeWriter<BodyContainer>
+    public class BodyContainerWriter : ContentTypeWriter<BodyContainerContent>
     {
-        protected override void Write(ContentWriter output, BodyContainer container)
+        protected override void Write(ContentWriter output, BodyContainerContent container)
         {
             output.Write(container.Count);
-            foreach (KeyValuePair<string, BodyTemplate> p in container)
+            foreach (KeyValuePair<string, BodyTemplateContent> p in container)
             {
                 output.Write(p.Key);
                 output.Write(p.Value.Mass);
                 output.Write((int)p.Value.BodyType);
                 output.Write(p.Value.Fixtures.Count);
-                foreach (FixtureTemplate f in p.Value.Fixtures)
+                foreach (FixtureTemplateContent f in p.Value.Fixtures)
                 {
                     output.Write(f.Name);
                     output.Write(f.Restitution);
@@ -85,7 +84,7 @@ namespace nkast.Aether.Content.Pipeline
 
         public override string GetRuntimeReader(TargetPlatform targetPlatform)
         {
-            return typeof(BodyContainerReader).AssemblyQualifiedName;
+            return "nkast.Aether.Physics2D.Content.BodyContainerReader, Aether.Physics2D";
         }
     }
 }

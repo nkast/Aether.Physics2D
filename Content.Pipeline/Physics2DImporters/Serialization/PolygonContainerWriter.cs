@@ -4,7 +4,6 @@
  */
 
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
@@ -12,12 +11,12 @@ using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
 namespace nkast.Aether.Content.Pipeline
 {
     [ContentTypeWriter]
-    public class PolygonContainerWriter : ContentTypeWriter<PolygonContainer>
+    public class PolygonContainerWriter : ContentTypeWriter<PolygonContainerContent>
     {
-        protected override void Write(ContentWriter output, PolygonContainer container)
+        protected override void Write(ContentWriter output, PolygonContainerContent container)
         {
             output.Write(container.Count);
-            foreach (KeyValuePair<string, Polygon> p in container)
+            foreach (KeyValuePair<string, PolygonContent> p in container)
             {
                 output.Write(p.Key);
                 output.Write(p.Value.Closed);
@@ -31,7 +30,7 @@ namespace nkast.Aether.Content.Pipeline
 
         public override string GetRuntimeReader(TargetPlatform targetPlatform)
         {
-            return typeof(PolygonContainerReader).AssemblyQualifiedName;
+            return "nkast.Aether.Physics2D.Content.PolygonContainerReader, Aether.Physics2D";
         }
     }
 }

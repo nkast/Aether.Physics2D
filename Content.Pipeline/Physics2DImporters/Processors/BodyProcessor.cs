@@ -6,16 +6,16 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content.Pipeline;
 using nkast.Aether.Physics2D.Collision.Shapes;
 using nkast.Aether.Physics2D.Common;
 using nkast.Aether.Physics2D.Common.Decomposition;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content.Pipeline;
 
 namespace nkast.Aether.Content.Pipeline
 {
     [ContentProcessor(DisplayName = "Physics2D Body Processor")]
-    class BodyProcessor : ContentProcessor<List<RawBodyTemplate>, BodyContainer>
+    class BodyProcessor : ContentProcessor<List<RawBodyTemplateContent>, BodyContainerContent>
     {
         private float _scaleFactor = 1f;
         private int _bezierIterations = 3;
@@ -38,7 +38,7 @@ namespace nkast.Aether.Content.Pipeline
             set { _bezierIterations = value; }
         }
 
-        public override BodyContainer Process(List<RawBodyTemplate> input, ContentProcessorContext context)
+        public override BodyContainerContent Process(List<RawBodyTemplateContent> input, ContentProcessorContext context)
         {
             if (ScaleFactor < 1)
                 throw new Exception("Pixel to meter ratio must be greater than zero.");
@@ -48,19 +48,19 @@ namespace nkast.Aether.Content.Pipeline
 
             Matrix matScale = Matrix.CreateScale(_scaleFactor, _scaleFactor, 1f);
             SVGPathParser parser = new SVGPathParser(_bezierIterations);
-            BodyContainer bodies = new BodyContainer();
+            BodyContainerContent bodies = new BodyContainerContent();
 
-            foreach (RawBodyTemplate rawBody in input)
+            foreach (RawBodyTemplateContent rawBody in input)
             {
                 if (rawBody.Name == "importer_default_path_container")
                     continue;
 
-                BodyTemplate currentBody = new BodyTemplate();
+                BodyTemplateContent currentBody = new BodyTemplateContent();
                 currentBody.Mass = rawBody.Mass;
                 currentBody.BodyType = rawBody.BodyType;
-                foreach (RawFixtureTemplate rawFixture in rawBody.Fixtures)
+                foreach (RawFixtureTemplateContent rawFixture in rawBody.Fixtures)
                 {
-                    List<Polygon> paths = parser.ParseSVGPath(rawFixture.Path, rawFixture.Transformation * matScale);
+                    List<PolygonContent> paths = parser.ParseSVGPath(rawFixture.Path, rawFixture.Transformation * matScale);
                     for (int i = 0; i < paths.Count; i++)
                     {
                         if (paths[i].Closed)
@@ -68,7 +68,7 @@ namespace nkast.Aether.Content.Pipeline
                             List<Vertices> partition = Triangulate.ConvexPartition(paths[i].Vertices, TriangulationAlgorithm.Bayazit);
                             foreach (Vertices v in partition)
                             {
-                                currentBody.Fixtures.Add(new FixtureTemplate()
+                                currentBody.Fixtures.Add(new FixtureTemplateContent()
                                 {
                                     Shape = new PolygonShape(v, rawFixture.Density),
                                     Restitution = rawFixture.Restitution,
@@ -88,7 +88,7 @@ namespace nkast.Aether.Content.Pipeline
                             {
                                 shape = new EdgeShape(paths[i].Vertices[0], paths[i].Vertices[1]);
                             }
-                            currentBody.Fixtures.Add(new FixtureTemplate()
+                            currentBody.Fixtures.Add(new FixtureTemplateContent()
                             {
                                 Shape = shape,
                                 Restitution = rawFixture.Restitution,

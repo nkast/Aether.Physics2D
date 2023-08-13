@@ -6,12 +6,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.Decomposition;
-using nkast.Aether.Physics2D.Common.PolygonManipulation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.Decomposition;
+using nkast.Aether.Physics2D.Common.PolygonManipulation;
 
 namespace nkast.Aether.Content.Pipeline
 {

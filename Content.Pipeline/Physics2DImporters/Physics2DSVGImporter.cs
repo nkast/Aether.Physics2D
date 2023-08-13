@@ -15,25 +15,25 @@ using Microsoft.Xna.Framework.Content.Pipeline;
 namespace nkast.Aether.Content.Pipeline
 {
     [ContentImporter(".svg", DisplayName = "Physics2D SVG Importer", DefaultProcessor = "Physics2DBodyProcessor")]
-    class Physics2DSVGImporter : ContentImporter<List<RawBodyTemplate>>
+    class Physics2DSVGImporter : ContentImporter<List<RawBodyTemplateContent>>
     {
         private const string IsNumber = @"\A[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?";
         private const string IsCommaWhitespace = @"\A[\s,]*";
 
         private Stack<Matrix> _transformations;
-        private List<RawBodyTemplate> _parsedSVG;
-        private RawBodyTemplate? _currentBody;
+        private List<RawBodyTemplateContent> _parsedSVG;
+        private RawBodyTemplateContent? _currentBody;
 
-        public override List<RawBodyTemplate> Import(string filename, ContentImporterContext context)
+        public override List<RawBodyTemplateContent> Import(string filename, ContentImporterContext context)
         {
             _transformations = new Stack<Matrix>();
             _transformations.Push(Matrix.Identity);
 
-            _parsedSVG = new List<RawBodyTemplate>();
-            _parsedSVG.Add(new RawBodyTemplate()
+            _parsedSVG = new List<RawBodyTemplateContent>();
+            _parsedSVG.Add(new RawBodyTemplateContent()
             {
                 Name = "importer_default_path_container",
-                Fixtures = new List<RawFixtureTemplate>(),
+                Fixtures = new List<RawFixtureTemplateContent>(),
                 Mass = 0f
             });
 
@@ -75,9 +75,9 @@ namespace nkast.Aether.Content.Pipeline
                     {
                         float.TryParse(currentElement.Attributes["fp_mass"].Value, NumberStyles.Float, CultureInfo.InvariantCulture, out bodyMass);
                     }
-                    _currentBody = new RawBodyTemplate()
+                    _currentBody = new RawBodyTemplateContent()
                     {
-                        Fixtures = new List<RawFixtureTemplate>(),
+                        Fixtures = new List<RawFixtureTemplateContent>(),
                         Mass = bodyMass,
                         Name = ID,
                         BodyType = type
@@ -86,7 +86,7 @@ namespace nkast.Aether.Content.Pipeline
                 }
                 if (currentElement.Name == "path")
                 {
-                    RawFixtureTemplate fixture = new RawFixtureTemplate();
+                    RawFixtureTemplateContent fixture = new RawFixtureTemplateContent();
                     fixture.Path = currentElement.Attributes["d"].Value;
                     fixture.Transformation = Matrix.Identity;
                     foreach (Matrix m in _transformations)

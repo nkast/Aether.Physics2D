@@ -52,15 +52,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="BodyContainer.cs" />
+    <Compile Include="BodyContainerContent.cs" />
+    <Compile Include="BodyTemplateContent.cs" />
+    <Compile Include="FixtureTemplateContent.cs" />
+    <Compile Include="PolygonContent.cs" />
+    <Compile Include="RawFixtureTemplateContent.cs" />
     <Compile Include="Serialization\BodyContainerWriter.cs" />
     <Compile Include="Processors\BodyProcessor.cs" />
     <Compile Include="Processors\Physics2DTextureProcessor.cs" />
-    <Compile Include="PolygonContainer.cs" />
+    <Compile Include="PolygonContainerContent.cs" />
     <Compile Include="Physics2DSVGImporter.cs" />
     <Compile Include="Processors\PolygonProcessor.cs" />
     <Compile Include="Serialization\PolygonContainerWriter.cs" />
-    <Compile Include="RawBodyTemplate.cs" />
+    <Compile Include="RawBodyTemplateContent.cs" />
     <Compile Include="SVGPathParser.cs" />
   </ItemGroup>
 

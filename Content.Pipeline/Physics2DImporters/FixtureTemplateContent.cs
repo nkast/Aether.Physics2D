@@ -4,13 +4,18 @@
  */
 
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using nkast.Aether.Physics2D.Collision.Shapes;
 using nkast.Aether.Physics2D.Dynamics;
 
-namespace nkast.Aether.Physics2D.Content
+namespace nkast.Aether.Content.Pipeline
 {
-    public class BodyContainer : Dictionary<string, BodyTemplate> 
+    public class FixtureTemplateContent
     {
-
+        public Shape Shape;
+        public float Restitution;
+        public float Friction;
+        public string Name;
     }
+
 }

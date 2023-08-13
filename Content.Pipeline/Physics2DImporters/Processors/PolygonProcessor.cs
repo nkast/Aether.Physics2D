@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Content.Pipeline;
 namespace nkast.Aether.Content.Pipeline
 {
     [ContentProcessor(DisplayName = "Physics2D Polygon Processor")]
-    class PolygonProcessor : ContentProcessor<List<RawBodyTemplate>, PolygonContainer>
+    class PolygonProcessor : ContentProcessor<List<RawBodyTemplateContent>, PolygonContainerContent>
     {
         private float _scaleFactor = 1f;
         private int _bezierIterations = 3;
@@ -45,7 +45,7 @@ namespace nkast.Aether.Content.Pipeline
             set { _decompose = value; }
         }
 
-        public override PolygonContainer Process(List<RawBodyTemplate> input, ContentProcessorContext context)
+        public override PolygonContainerContent Process(List<RawBodyTemplateContent> input, ContentProcessorContext context)
         {
             if (ScaleFactor < 1)
             {
@@ -58,13 +58,13 @@ namespace nkast.Aether.Content.Pipeline
 
             Matrix matScale = Matrix.CreateScale(_scaleFactor, _scaleFactor, 1f);
             SVGPathParser parser = new SVGPathParser(_bezierIterations);
-            PolygonContainer polygons = new PolygonContainer();
+            PolygonContainerContent polygons = new PolygonContainerContent();
 
-            foreach (RawBodyTemplate body in input)
+            foreach (RawBodyTemplateContent body in input)
             {
-                foreach (RawFixtureTemplate fixture in body.Fixtures)
+                foreach (RawFixtureTemplateContent fixture in body.Fixtures)
                 {
-                    List<Polygon> paths = parser.ParseSVGPath(fixture.Path, fixture.Transformation * matScale);
+                    List<PolygonContent> paths = parser.ParseSVGPath(fixture.Path, fixture.Transformation * matScale);
                     if (paths.Count == 1)
                     {
                         polygons.Add(fixture.Name, paths[0]);

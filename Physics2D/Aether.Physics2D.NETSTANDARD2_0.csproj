@@ -101,8 +101,6 @@
     <Compile Include="Common\TextureTools\MarchingSquares.cs" />
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\Vertices.cs" />
-    <Compile Include="Content\BodyContainer.cs" />
-    <Compile Include="Content\PolygonContainer.cs" />
     <Compile Include="Controllers\BuoyancyController.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\GravityController.cs" />

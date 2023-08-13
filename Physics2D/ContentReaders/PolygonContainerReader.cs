@@ -3,8 +3,9 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-using nkast.Aether.Physics2D.Common;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using nkast.Aether.Physics2D.Common;
 
 namespace nkast.Aether.Physics2D.Content
 {

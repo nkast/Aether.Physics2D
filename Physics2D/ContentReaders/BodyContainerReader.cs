@@ -3,10 +3,11 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using nkast.Aether.Physics2D.Collision.Shapes;
 using nkast.Aether.Physics2D.Common;
 using nkast.Aether.Physics2D.Dynamics;
-using Microsoft.Xna.Framework.Content;
 
 namespace nkast.Aether.Physics2D.Content
 {
@@ -55,7 +56,8 @@ namespace nkast.Aether.Physics2D.Content
                                     verts.Add(input.ReadVector2());
                                 }
                                 PolygonShape poly = new PolygonShape(verts, density);
-                                poly.MassData.Centroid = input.ReadVector2();
+                                Vector2 massDataCentroid = input.ReadVector2();
+                                poly.MassData.Centroid = massDataCentroid;
                                 fixture.Shape = poly;
                             } break;
                         case ShapeType.Edge:

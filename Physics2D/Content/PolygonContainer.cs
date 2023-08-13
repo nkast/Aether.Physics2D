@@ -9,18 +9,6 @@ using nkast.Aether.Physics2D.Common.Decomposition;
 
 namespace nkast.Aether.Physics2D.Content
 {
-    public struct Polygon
-    {
-        public Vertices Vertices;
-        public bool Closed;
-
-        public Polygon(Vertices v, bool closed)
-        {
-            Vertices = v;
-            Closed = closed;
-        }
-    }
-
     public class PolygonContainer : Dictionary<string, Polygon>
     {
         public bool IsDecomposed
