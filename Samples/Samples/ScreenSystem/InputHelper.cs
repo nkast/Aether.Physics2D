@@ -135,8 +135,10 @@ namespace nkast.Aether.Physics2D.Samples.ScreenSystem
                 PreviousVirtualState = VirtualState;
 
             KeyboardState = Keyboard.GetState();
-            GamePadState = GamePad.GetState(PlayerIndex.One);
             MouseState = Mouse.GetState();
+#if !BLAZORGL
+            GamePadState = GamePad.GetState(PlayerIndex.One);
+#endif
 
             if (_handleVirtualStick)
             {
