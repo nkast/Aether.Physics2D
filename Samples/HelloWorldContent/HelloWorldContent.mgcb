@@ -25,8 +25,13 @@
 /processorParam:TextureFormat=Color
 /build:CircleSprite.png
 
-#begin Font.xnb
-/copy:Font.xnb
+#begin Font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Color
+/processorParam:Smoothing=AutoHint
+/build:Font.spritefont
 
 #begin GroundSprite.png
 /importer:TextureImporter

@@ -204,14 +204,14 @@
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
+/processorParam:TextureFormat=Color
 /build:Fonts/DetailsFont.spritefont
 
 #begin Fonts/MenuFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
+/processorParam:TextureFormat=Color
 /build:Fonts/MenuFont.spritefont
 
 #begin Materials/Square.png

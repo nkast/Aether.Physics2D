@@ -55,14 +55,29 @@
 /processorParam:DebugMode=Auto
 /build:Effects/LightEffect.fx
 
-#begin Fonts/detailsFont.xnb
-/copy:Fonts/detailsFont.xnb
+#begin Fonts/detailsFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Color
+/processorParam:Smoothing=Disable
+/build:Fonts/detailsFont.spritefont
 
-#begin Fonts/frameRateCounterFont.xnb
-/copy:Fonts/frameRateCounterFont.xnb
+#begin Fonts/frameRateCounterFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Color
+/processorParam:Smoothing=Disable
+/build:Fonts/frameRateCounterFont.spritefont
 
-#begin Fonts/menufont.xnb
-/copy:Fonts/menufont.xnb
+#begin Fonts/menufont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Color
+/processorParam:Smoothing=AutoHint
+/build:Fonts/menufont.spritefont
 
 #begin Materials/dots.png
 /importer:TextureImporter
