@@ -1,41 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{ADEB597D-77B9-4912-98F0-D8EDE600D883}</ProjectGuid>
+    <ProjectGuid>{5AB8F81E-C2AA-4090-8758-E07334208422}</ProjectGuid>
     <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>nkast.Aether.Physics2D</RootNamespace>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <AndroidResgenClass>Resource</AndroidResgenClass>
-    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
-    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <AssemblyName>Aether.Physics2D</AssemblyName>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>15</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\MG.Android\</OutputPath>
-    <DefineConstants>DEBUG;LEGACY_ASYNCADDREMOVE;XNAAPI;ANDROID</DefineConstants>
+    <OutputPath>..\bin\Debug\UAP.KNI\AnyCPU\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Debug\UAP.KNI\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETFX_CORE;W10</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <IntermediateOutputPath>C:\Users\nkast\AppData\Local\Temp\vsEFC.tmp\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\MG.Android\</OutputPath>
-    <DefineConstants>LEGACY_ASYNCADDREMOVE;XNAAPI;ANDROID</DefineConstants>
+    <OutputPath>..\bin\Release\UAP.KNI\AnyCPU\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Release\UAP.KNI\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETFX_CORE;W10</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <IntermediateOutputPath>C:\Users\nkast\AppData\Local\Temp\vsEFC.tmp\Release\</IntermediateOutputPath>
+    <DocumentationFile>..\bin\Release\UAP.KNI\AnyCPU\Aether.Physics2D.XML</DocumentationFile>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.8</Version>
+    </PackageReference>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Collision\Collision.cs" />
     <Compile Include="Collision\Distance.cs" />
@@ -110,6 +123,7 @@
     <Compile Include="Common\PolygonManipulation\SimplifyTools.cs" />
     <Compile Include="Common\PolygonManipulation\YuPengClipper.cs" />
     <Compile Include="Common\PolygonTools.cs" />
+    <Compile Include="Common\Serialization.cs" />
     <Compile Include="Common\TextureTools\MarchingSquares.cs" />
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\TextureTools\TextureConverter.cs" />
@@ -156,20 +170,17 @@
     <Compile Include="Dynamics\WorldCallbacks.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.ANDROID.cs" />
+    <Compile Include="Properties\AssemblyInfo.UAP.KNI.cs" />
   </ItemGroup>
-
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="Mono.Android" />
-    <PackageReference Include="MonoGame.Framework.Android" Version="3.7.1.189">
+    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 </Project>
