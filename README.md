@@ -50,3 +50,4 @@ https://github.com/nkast/Aether.Physics2D/releases/tag/v1.7
 While Aether.Physics2D is free and open-source, maintaining and expanding the library requires ongoing effort and resources. We rely on the support of our community to continue delivering top-notch updates, features, and support.
 By [becoming a Sponsor](https://github.com/sponsors/nkast), you can directly contribute to the growth and sustainability of Aether.Physics2D. 
 
+<!-- sponsors --><!-- sponsors -->
