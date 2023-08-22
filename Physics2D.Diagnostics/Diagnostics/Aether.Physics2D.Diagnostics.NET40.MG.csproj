@@ -39,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Release\NET40.MG\Aether.Physics2D.Diagnostics.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DebugView.cs" />

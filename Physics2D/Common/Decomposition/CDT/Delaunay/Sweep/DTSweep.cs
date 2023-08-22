@@ -683,7 +683,7 @@ namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
         }
 
         /// <summary>
-        /// Scan part of the FlipScan algorithm<br>
+        /// Scan part of the FlipScan algorithm
         /// When a triangle pair isn't flippable we will scan for the next 
         /// point that is inside the flip triangle scan area. When found 
         /// we generate a new flipEdgeEvent
