@@ -6,9 +6,9 @@
     <version>1.7.0.0</version>
     <authors>Kastellanos Nikolaos</authors>
     <owners>Kastellanos Nikolaos</owners>
-    <licenseUrl>https://github.com/tainicom/Aether.Physics2D/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/tainicom/Aether.Physics2D</projectUrl>
-    <iconUrl>https://github.com/tainicom/Aether.Physics2D/raw/master/Icons/NugetLogo.png</iconUrl>
+    <licenseUrl>https://github.com/nkast/Aether.Physics2D/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/nkast/Aether.Physics2D</projectUrl>
+    <iconUrl>https://github.com/nkast/Aether.Physics2D/raw/master/Icons/NugetLogo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Aether.Physics2D is a 2D collision detection system.</description>
     <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
