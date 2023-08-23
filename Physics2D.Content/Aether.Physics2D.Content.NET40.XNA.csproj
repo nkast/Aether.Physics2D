@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{45834BDE-3858-4BDC-8DDA-D8EDD3FC78ED}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nkast.Aether.Physics2D.Content</RootNamespace>
+    <AssemblyName>Aether.Physics2D.Content</AssemblyName>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\NET40.XNA\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS;XNA;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\NET40.XNA\</OutputPath>
+    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;XNA;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Content\ContentReaders\BodyContainerReader.cs" />
+    <Compile Include="Content\ContentReaders\PolygonContainerReader.cs" />
+    <Compile Include="Content\BodyContainer.cs" />
+    <Compile Include="Content\BodyTemplate.cs" />
+    <Compile Include="Content\FixtureTemplate.cs" />
+    <Compile Include="Content\Polygon.cs" />
+    <Compile Include="Content\PolygonContainer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Physics2D\Aether.Physics2D.NET40.XNA.csproj">
+      <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
+      <Name>Aether.Physics2D.NET40.XNA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

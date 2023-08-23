@@ -5,41 +5,37 @@ float2 LightPosition;
 float  LightRadius;
 float  ShadowMapTexelSize;
 
-Texture2D Texture;
-sampler2D TextureSampler = sampler_state { Texture = <Texture>; };
+DECLARE_TEXTURE(Texture, 0) = sampler_state { Texture = <Texture>; };
 
-Texture2D ShadowMapU;
-Texture2D ShadowMapR;
-Texture2D ShadowMapD;
-Texture2D ShadowMapL;
-sampler2D ShadowMapUSampler = sampler_state
+DECLARE_TEXTURE(ShadowMapU, 1) = sampler_state
 { 
     Texture = <ShadowMapU>;
     Filter = Point;
     AddressU = Clamp;
     AddressV = Clamp;
 };
-sampler2D ShadowMapRSampler = sampler_state 
+DECLARE_TEXTURE(ShadowMapR, 2) = sampler_state 
 {
     Texture = <ShadowMapR>;
     Filter = Point;
     AddressU = Clamp;
     AddressV = Clamp;
 };
-sampler2D ShadowMapDSampler = sampler_state 
+DECLARE_TEXTURE(ShadowMapD, 3) = sampler_state 
 { 
     Texture = <ShadowMapD>;
     Filter = Point;
     AddressU = Clamp;
     AddressV = Clamp;
 };
-sampler2D ShadowMapLSampler = sampler_state 
+DECLARE_TEXTURE(ShadowMapL, 4) = sampler_state 
 { 
     Texture = <ShadowMapL>;
     Filter = Point;
     AddressU = Clamp;
     AddressV = Clamp;
 };
+
 
 
 struct LightVertexShaderInput
@@ -71,7 +67,7 @@ LightVertexShaderOutput LightVS(in LightVertexShaderInput input)
 
 float4 LightPS(LightVertexShaderOutput input) : COLOR
 {
-    float4 texColor = tex2D(TextureSampler, input.TexCoord) * input.Color;
+    float4 texColor = SAMPLE_TEXTURE(Texture, input.TexCoord) * input.Color;
     
     float2 lightDirection = input.PositionWS - LightPosition;
     float2 lightDirectionAbs = abs(lightDirection);
@@ -85,22 +81,22 @@ float4 LightPS(LightVertexShaderOutput input) : COLOR
 
     if (lightDirection.y >= lightDirectionAbs.x) //up
     {
-        normalizedShadowDistance = tex2D(ShadowMapUSampler, float2(mapCoord.x, v)).r;
+        normalizedShadowDistance = SAMPLE_TEXTURE(ShadowMapU, float2(mapCoord.x, v)).r;
         normalizedLightDistance = lightDirectionAbs.y / LightRadius;
     }
     else if (lightDirection.x >= lightDirectionAbs.y) //right
     {
-        normalizedShadowDistance = tex2D(ShadowMapRSampler, float2(1 - mapCoord.y, v)).r;
+        normalizedShadowDistance = SAMPLE_TEXTURE(ShadowMapR, float2(1 - mapCoord.y, v)).r;
         normalizedLightDistance = lightDirectionAbs.x / LightRadius;
     }
     else if (lightDirection.y <= -lightDirectionAbs.x) //down
     {
-        normalizedShadowDistance = tex2D(ShadowMapDSampler, float2(mapCoord.x, v)).r;
+        normalizedShadowDistance = SAMPLE_TEXTURE(ShadowMapD, float2(mapCoord.x, v)).r;
         normalizedLightDistance = lightDirectionAbs.y / LightRadius;
     }
     else // if (lightDirection.x <= -lightDirectionAbs.y) //left
     {
-        normalizedShadowDistance = tex2D(ShadowMapLSampler, float2(1 - mapCoord.y, v)).r;
+        normalizedShadowDistance = SAMPLE_TEXTURE(ShadowMapL, float2(1 - mapCoord.y, v)).r;
         normalizedLightDistance = lightDirectionAbs.x / LightRadius;
     }
         

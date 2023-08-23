@@ -10,7 +10,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Diagnostics
+namespace nkast.Aether.Physics2D.Diagnostics
 {
     [Flags]
     public enum DebugViewFlags

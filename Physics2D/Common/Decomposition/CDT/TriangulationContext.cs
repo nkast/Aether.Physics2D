@@ -36,9 +36,9 @@
 
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using tainicom.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
+using nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition.CDT
+namespace nkast.Aether.Physics2D.Common.Decomposition.CDT
 {
     internal abstract class TriangulationContext
     {

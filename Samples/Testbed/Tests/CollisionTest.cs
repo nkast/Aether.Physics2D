@@ -29,15 +29,15 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     public class CollisionTest : Test
     {

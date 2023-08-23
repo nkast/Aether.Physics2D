@@ -3,9 +3,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Dynamics.Joints;
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     public class JointCollection : IEnumerable<Joint>
         , ICollection<Joint>, IList<Joint>

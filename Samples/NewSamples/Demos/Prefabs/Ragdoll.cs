@@ -5,13 +5,13 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 
-namespace tainicom.Aether.Physics2D.Samples.Demos.Prefabs
+namespace nkast.Aether.Physics2D.Samples.Demos.Prefabs
 {
     public class Ragdoll
     {

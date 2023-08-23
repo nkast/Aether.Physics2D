@@ -9,10 +9,10 @@
 */
 
 using Microsoft.Xna.Framework;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
 
-namespace tainicom.Aether.Physics2D.Diagnostics
+namespace nkast.Aether.Physics2D.Diagnostics
 {
     /// Implement and register this class with a World to provide debug drawing of physics
     /// entities in your game.

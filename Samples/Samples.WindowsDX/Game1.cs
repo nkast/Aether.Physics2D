@@ -6,10 +6,10 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using tainicom.Aether.Physics2D.Samples.Demos;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Samples.Demos;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 
-namespace tainicom.Aether.Physics2D.Samples
+namespace nkast.Aether.Physics2D.Samples
 {
     /// <summary>
     /// This is the main type for your game

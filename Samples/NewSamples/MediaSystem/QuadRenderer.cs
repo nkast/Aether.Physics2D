@@ -7,7 +7,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Samples.MediaSystem
+namespace nkast.Aether.Physics2D.Samples.MediaSystem
 {
     public class QuadRenderer : IDisposable
     {

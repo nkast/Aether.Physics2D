@@ -35,9 +35,9 @@
  */
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
+using nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition.CDT.Sets
+namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Sets
 {
     internal class PointSet : Triangulatable
     {

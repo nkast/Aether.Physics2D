@@ -25,13 +25,13 @@
 * 3. This notice may not be removed or altered from any source distribution. 
 */
 
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Collision.Shapes
+namespace nkast.Aether.Physics2D.Collision.Shapes
 {
     /// <summary>
     /// A line segment (edge) shape. These can be connected in chains or loops

@@ -1,4 +1,4 @@
-namespace tainicom.Aether.Physics2D.Samples
+namespace nkast.Aether.Physics2D.Samples
 {
     internal static class Program
     {

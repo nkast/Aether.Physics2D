@@ -6,7 +6,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     public class SpriteFonts
     {

@@ -6,12 +6,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common.PolygonManipulation
+namespace nkast.Aether.Physics2D.Common.PolygonManipulation
 {
     internal enum PolyClipType
     {

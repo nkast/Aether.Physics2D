@@ -1,0 +1,28 @@
+name: Generate Sponsors README
+on:
+  workflow_dispatch:
+  schedule:
+    # This is a cron schedule, it will run every day at 15:30.
+    - cron: 30 15 1,15 * *
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      # Generate the sponsors
+      - name: Generate Sponsors 💖
+        uses: JamesIves/github-sponsors-readme-action@v1
+        with:
+          token: ${{ secrets.SECRET_SPONSORS_README }}
+          file: 'README.md'
+
+      # Deploy the changes back to the main branch of the repository
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          # As we're deploying changes to our markdown files, this needs to be . to push the root directory back to the repository.
+          folder: '.'

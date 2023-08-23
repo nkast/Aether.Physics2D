@@ -46,9 +46,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using tainicom.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
+using nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay;
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition.CDT.Polygon
+namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Polygon
 {
     internal class Polygon : Triangulatable
     {

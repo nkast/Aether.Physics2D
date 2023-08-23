@@ -8,14 +8,14 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.Decomposition;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.Decomposition;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 
-namespace tainicom.Aether.Physics2D.Samples.DrawingSystem
+namespace nkast.Aether.Physics2D.Samples.DrawingSystem
 {
     public enum MaterialType
     {

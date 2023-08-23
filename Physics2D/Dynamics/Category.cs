@@ -27,7 +27,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     [Flags]
     public enum Category

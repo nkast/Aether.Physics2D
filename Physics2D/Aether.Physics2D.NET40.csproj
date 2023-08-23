@@ -8,7 +8,7 @@
     <ProjectGuid>{C65B4E93-DB9A-49D7-9017-41D23A5ED796}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -20,6 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\Net40\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Debug\NET40\</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,18 +33,13 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\Net40\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Release\NET40\</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
+    <DocumentationFile>..\bin\Release\Net40\Aether.Physics2D.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Collision\Collision.cs" />
@@ -125,8 +121,6 @@
     <Compile Include="Common\TextureTools\MarchingSquares.cs" />
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\Vertices.cs" />
-    <Compile Include="Content\BodyContainer.cs" />
-    <Compile Include="Content\PolygonContainer.cs" />
     <Compile Include="Controllers\BuoyancyController.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\GravityController.cs" />
@@ -176,11 +170,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

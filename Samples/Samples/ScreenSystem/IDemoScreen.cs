@@ -3,7 +3,7 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     public interface IDemoScreen
     {

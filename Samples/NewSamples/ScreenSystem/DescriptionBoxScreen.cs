@@ -4,12 +4,12 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     /// A popup message box screen, used to display "are you sure?"

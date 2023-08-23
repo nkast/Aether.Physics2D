@@ -30,12 +30,12 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Collision
+namespace nkast.Aether.Physics2D.Collision
 {
     /// <summary>
     /// A node in the dynamic tree. The client does not interact with this directly.

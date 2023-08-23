@@ -27,13 +27,13 @@
 
 using System;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common;
 #if XNAAPI
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics.Joints
+namespace nkast.Aether.Physics2D.Dynamics.Joints
 {
     // 1-D rained system
     // m (v2 - v1) = lambda

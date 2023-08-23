@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Common.TextureTools
+namespace nkast.Aether.Physics2D.Common.TextureTools
 {
     // User contribution from Sickbattery aka David Reschke.
 

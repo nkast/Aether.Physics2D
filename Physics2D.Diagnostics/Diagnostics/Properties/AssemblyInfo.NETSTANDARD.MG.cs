@@ -6,7 +6,7 @@ using System.Reflection;
 [assembly: AssemblyTitle("Aether.Physics2D.Diagnostics")]
 [assembly: AssemblyDescription("Aether.Physics2D for MonoGame")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("tainicom LTD")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Aether.Physics2D")]
 [assembly: AssemblyCopyright("Copyright Ian Qvist © 2013, Copyright © Kastellanos Nikolaos 2015-2023")]
 [assembly: AssemblyTrademark("Aether Engine (tm)")]
@@ -15,5 +15,5 @@ using System.Reflection;
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
-[assembly: AssemblyVersion("1.7.0.0")]
-[assembly: AssemblyFileVersion("1.7.0.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]

@@ -4,12 +4,12 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Samples.MediaSystem
+namespace nkast.Aether.Physics2D.Samples.MediaSystem
 {
     public class LineBatch : IDisposable
     {

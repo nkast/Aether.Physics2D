@@ -5,20 +5,22 @@
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <RootNamespace>tainicom.Aether.Physics2D.Diagnostics</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
     <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
+
+    <OutputPath>..\..\bin\$(Configuration)\netstandard2.0.MG\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.MG\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>DEBUG;TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\..\bin\Debug\MG.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\..\bin\Release\MG.netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>nkast.Aether.Physics2D.Content</RootNamespace>
+    <AssemblyName>Aether.Physics2D.Content</AssemblyName>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0.KNI\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.KNI\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;KNI;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;KNI;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Content\ContentReaders\BodyContainerReader.cs" />
+    <Compile Include="Content\ContentReaders\PolygonContainerReader.cs" />
+    <Compile Include="Content\BodyContainer.cs" />
+    <Compile Include="Content\BodyTemplate.cs" />
+    <Compile Include="Content\FixtureTemplate.cs" />
+    <Compile Include="Content\Polygon.cs" />
+    <Compile Include="Content\PolygonContainer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.NETSTANDARD.KNI.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
+      <ExcludeAssets>*</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.9.9001">
+      <ExcludeAssets>*</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -2,11 +2,11 @@
 
 using System;
 #if XNAAPI
-using Complex = tainicom.Aether.Physics2D.Common.Complex;
+using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Common
+namespace nkast.Aether.Physics2D.Common
 {
     public struct Complex
     {

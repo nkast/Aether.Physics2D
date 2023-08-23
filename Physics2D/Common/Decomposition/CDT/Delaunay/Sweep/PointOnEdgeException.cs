@@ -36,7 +36,7 @@
 
 using System;
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
+namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
 {
     internal class PointOnEdgeException : NotImplementedException
     {

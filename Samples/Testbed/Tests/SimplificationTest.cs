@@ -4,12 +4,12 @@
  */
 
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Common.PolygonManipulation;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Common.PolygonManipulation;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     public class SimplificationTest : Test
     {

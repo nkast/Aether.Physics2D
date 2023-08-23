@@ -6,7 +6,7 @@
     <SharedGUID>72DCF07D-A710-4BB9-84D4-B5C11313929C</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>tainicom.Aether.Physics2D.Samples.Samples</Import_RootNamespace>
+    <Import_RootNamespace>nkast.Aether.Physics2D.Samples.Samples</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Demos\AdvancedDemo1.cs" />

@@ -4,7 +4,7 @@ Aether.Physics2D is a 2D collision detection system.
 
 [![Discord](https://img.shields.io/discord/780484381961093172?style=flat)](https://discord.gg/95nPEjZ6mu)
 
-Documentation: https://tainicom.github.io/Aether.Physics2D/
+Documentation: https://nkast.github.io/Aether.Physics2D/
 
 ![3DCameraDemo](Documentation//Images/3DCameraDemo.png)
 
@@ -41,6 +41,13 @@ https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.MG
 https://www.nuget.org/packages/Aether.Physics2D.Diagnostics
  
 
-https://github.com/tainicom/Aether.Physics2D/releases/tag/v1.6
+https://github.com/nkast/Aether.Physics2D/releases/tag/v1.7
 
 ![LightAndShadowsDemo](Documentation//Images/LightAndShadowsDemo.png)
+
+## Sponsors ❤️
+
+While Aether.Physics2D is free and open-source, maintaining and expanding the library requires ongoing effort and resources. We rely on the support of our community to continue delivering top-notch updates, features, and support.
+By [becoming a Sponsor](https://github.com/sponsors/nkast), you can directly contribute to the growth and sustainability of Aether.Physics2D. 
+
+<!-- sponsors --><a href="https://github.com/damian-666"><img src="https://github.com/damian-666.png" width="60px" alt="Damian" /></a><a href="https://github.com/KeithRiskey"><img src="https://github.com/KeithRiskey.png" width="60px" alt="Keith Riskey" /></a><!-- sponsors -->

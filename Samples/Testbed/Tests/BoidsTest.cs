@@ -2,10 +2,10 @@
 
 using System;
 using Microsoft.Xna.Framework;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     // This test uses directly the BroadPhase for collision tests
     // and implements a custom physics symulation.

@@ -1,15 +1,15 @@
 // Copyright (c) 2018 Kastellanos Nikolaos
 
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
 using Microsoft.Xna.Framework;
-using tainicom.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Diagnostics;
 using System;
 using System.Threading.Tasks;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Tests
+namespace nkast.Aether.Physics2D.Samples.Testbed.Tests
 {
     public class MultithreadWorldsTest : Test
     {

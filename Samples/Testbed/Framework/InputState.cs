@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
+namespace nkast.Aether.Physics2D.Samples.Testbed.Framework
 {
     public class InputState
     {
@@ -46,7 +46,7 @@ namespace tainicom.Aether.Physics2D.Samples.Testbed.Framework
         public MouseState PrevMouseState { get { return _prevMouseState; } }
 
         public int ScrollWheelDelta { get { return MouseState.ScrollWheelValue - PrevMouseState.ScrollWheelValue; } }
-#if MG
+#if KNI
         public int HScrollWheelDelta { get { return MouseState.HorizontalScrollWheelValue - PrevMouseState.HorizontalScrollWheelValue; } }
 #endif
 

@@ -31,12 +31,12 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Diagnostics;
-using tainicom.Aether.Physics2D.Samples.Testbed.Framework;
-using tainicom.Aether.Physics2D.Samples.Testbed.Tests;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Diagnostics;
+using nkast.Aether.Physics2D.Samples.Testbed.Framework;
+using nkast.Aether.Physics2D.Samples.Testbed.Tests;
 
-namespace tainicom.Aether.Physics2D.Samples.Testbed
+namespace nkast.Aether.Physics2D.Samples.Testbed
 {
     /// <summary>
     /// This is the main type for your game
@@ -263,7 +263,7 @@ namespace tainicom.Aether.Physics2D.Samples.Testbed
                 Vector3 beginPos = new Vector3(_mouseMoveBeginState.Value.X, _mouseMoveBeginState.Value.Y, 0f);
                 Vector3 pos = new Vector3(_inputState.MouseState.X, _inputState.MouseState.Y, 0f);
 
-#if MG
+#if KNI
                 if (Mouse.IsRawInputAvailable)
                 {
                     beginPos = new Vector3(_mouseMoveBeginState.Value.RawX, _mouseMoveBeginState.Value.RawY, 0f);

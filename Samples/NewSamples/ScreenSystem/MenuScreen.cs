@@ -5,11 +5,11 @@
 
 using System;
 using System.Collections.Generic;
-using tainicom.Aether.Physics2D.Samples.MediaSystem;
+using nkast.Aether.Physics2D.Samples.MediaSystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Samples.ScreenSystem
+namespace nkast.Aether.Physics2D.Samples.ScreenSystem
 {
     /// <summary>
     /// Base class for screens that contain a menu of options. The user can

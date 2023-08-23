@@ -30,15 +30,15 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Collision.Shapes;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Collision.Shapes;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     /// <summary>
     /// A fixture is used to attach a Shape to a body for collision detection. A fixture

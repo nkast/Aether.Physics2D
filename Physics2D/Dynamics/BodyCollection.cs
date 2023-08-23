@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     public class BodyCollection : IEnumerable<Body>
         , ICollection<Body>, IList<Body>

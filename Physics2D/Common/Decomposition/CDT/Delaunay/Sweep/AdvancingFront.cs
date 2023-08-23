@@ -43,7 +43,7 @@
 using System;
 using System.Text;
 
-namespace tainicom.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
+namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
 {
     /**
      * @author Thomas Åhlen (thahlen@gmail.com)

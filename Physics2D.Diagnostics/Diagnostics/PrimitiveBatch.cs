@@ -9,7 +9,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Diagnostics
+namespace nkast.Aether.Physics2D.Diagnostics
 {
     public class PrimitiveBatch : IPrimitiveBatch, IDisposable
     {

@@ -38,17 +38,17 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using tainicom.Aether.Physics2D.Collision;
-using tainicom.Aether.Physics2D.Common;
-using tainicom.Aether.Physics2D.Controllers;
-using tainicom.Aether.Physics2D.Dynamics.Contacts;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Collision;
+using nkast.Aether.Physics2D.Common;
+using nkast.Aether.Physics2D.Controllers;
+using nkast.Aether.Physics2D.Dynamics.Contacts;
+using nkast.Aether.Physics2D.Dynamics.Joints;
 
 #if XNAAPI
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
-namespace tainicom.Aether.Physics2D.Dynamics
+namespace nkast.Aether.Physics2D.Dynamics
 {
     /// <summary>
     /// The world class manages all physics entities, dynamic simulation,

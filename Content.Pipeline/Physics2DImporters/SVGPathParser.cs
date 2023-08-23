@@ -29,10 +29,10 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using tainicom.Aether.Physics2D.Common;
 using Microsoft.Xna.Framework;
+using nkast.Aether.Physics2D.Common;
 
-namespace tainicom.Aether.Content.Pipeline
+namespace nkast.Aether.Content.Pipeline
 {
     class SVGPathParser
     {
@@ -46,9 +46,9 @@ namespace tainicom.Aether.Content.Pipeline
             _iterations = bezierIterations;
         }
 
-        public List<Polygon> ParseSVGPath(string path, Matrix transformation)
+        public List<PolygonContent> ParseSVGPath(string path, Matrix transformation)
         {
-            List<Polygon> result = new List<Polygon>();
+            List<PolygonContent> result = new List<PolygonContent>();
             Vertices currentPath = null;
             Vector2 currentPosition = Vector2.Zero;
 
@@ -175,7 +175,7 @@ namespace tainicom.Aether.Content.Pipeline
                     {
                         if (currentPath != null && currentPath.Count > 1)
                         {
-                            result.Add(new Polygon(currentPath, false));
+                            result.Add(new PolygonContent(currentPath, false));
                         }
                         currentPath = new Vertices();
                         argumentCount = 0;
@@ -188,7 +188,7 @@ namespace tainicom.Aether.Content.Pipeline
                     {
                         if (currentPath != null && currentPath.Count > 1)
                         {
-                            result.Add(new Polygon(currentPath, true));
+                            result.Add(new PolygonContent(currentPath, true));
                         }
                         currentPath = null;
                         argumentCount = 0;
@@ -197,10 +197,10 @@ namespace tainicom.Aether.Content.Pipeline
             }
             if (currentPath != null && currentPath.Count > 1)
             {
-                result.Add(new Polygon(currentPath, false));
+                result.Add(new PolygonContent(currentPath, false));
             }
 
-            foreach (Polygon poly in result)
+            foreach (PolygonContent poly in result)
             {
                 for (int i = 0; i < poly.Vertices.Count; i++)
                 {

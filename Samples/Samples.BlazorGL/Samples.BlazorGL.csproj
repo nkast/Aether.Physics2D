@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+	<MonoGamePlatform>BlazorGL</MonoGamePlatform>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);TRACE;BLAZORGL</DefineConstants>
+    <RunAOTCompilation>False</RunAOTCompilation>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants);TRACE;BLAZORGL</DefineConstants>
+    <RunAOTCompilation>False</RunAOTCompilation>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework.Blazor" Version="3.9.9001" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.11" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI.csproj" />
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <MonoGameContentReference Include="..\SamplesContent\SamplesContent.mgcb">
+      <Link>Content\SamplesContent.mgcb</Link>
+    </MonoGameContentReference>
+  </ItemGroup>
+  <Import Project="..\Samples\Samples.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder17.targets" />
+</Project>

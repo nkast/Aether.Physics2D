@@ -5,20 +5,21 @@
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <RootNamespace>tainicom.Aether.Physics2D</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D</RootNamespace>
     <AssemblyName>Aether.Physics2D</AssemblyName>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>DEBUG;TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Debug\netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;NETSTANDARD2_0</DefineConstants>
-    <OutputPath>..\bin\Release\netstandard2.0\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -101,8 +102,6 @@
     <Compile Include="Common\TextureTools\MarchingSquares.cs" />
     <Compile Include="Common\TextureTools\Terrain.cs" />
     <Compile Include="Common\Vertices.cs" />
-    <Compile Include="Content\BodyContainer.cs" />
-    <Compile Include="Content\PolygonContainer.cs" />
     <Compile Include="Controllers\BuoyancyController.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\GravityController.cs" />

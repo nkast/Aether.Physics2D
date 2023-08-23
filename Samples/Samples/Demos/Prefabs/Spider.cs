@@ -3,14 +3,14 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-using tainicom.Aether.Physics2D.Dynamics;
-using tainicom.Aether.Physics2D.Dynamics.Joints;
-using tainicom.Aether.Physics2D.Samples.DrawingSystem;
-using tainicom.Aether.Physics2D.Samples.ScreenSystem;
+using nkast.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Dynamics.Joints;
+using nkast.Aether.Physics2D.Samples.DrawingSystem;
+using nkast.Aether.Physics2D.Samples.ScreenSystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.Physics2D.Samples.Demos.Prefabs
+namespace nkast.Aether.Physics2D.Samples.Demos.Prefabs
 {
     public class Spider
     {

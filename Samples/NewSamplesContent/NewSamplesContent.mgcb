@@ -6,11 +6,11 @@
 /platform:Windows
 /config:
 /profile:Reach
-/compress:False
+/compress:True
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\bin\Debug\MG.Windows\Aether.Content.Pipeline.Physics2DImporters.dll
+/reference:..\..\bin\Debug\NET40.KNI\Aether.Content.Pipeline.Physics2DImporters.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -204,14 +204,14 @@
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
+/processorParam:TextureFormat=Color
 /build:Fonts/DetailsFont.spritefont
 
 #begin Fonts/MenuFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
+/processorParam:TextureFormat=Color
 /build:Fonts/MenuFont.spritefont
 
 #begin Materials/Square.png

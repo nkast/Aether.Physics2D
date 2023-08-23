@@ -4,10 +4,10 @@
  */
 
 using System;
-using tainicom.Aether.Physics2D.Common.PhysicsLogic;
-using tainicom.Aether.Physics2D.Dynamics;
+using nkast.Aether.Physics2D.Common.PhysicsLogic;
+using nkast.Aether.Physics2D.Dynamics;
 
-namespace tainicom.Aether.Physics2D.Controllers
+namespace nkast.Aether.Physics2D.Controllers
 {
     public abstract class Controller : FilterData
     {

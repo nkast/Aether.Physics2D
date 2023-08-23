@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.Physics2D.Samples.HelloWorld</RootNamespace>
+    <RootNamespace>nkast.Aether.Physics2D.Samples.HelloWorld</RootNamespace>
     <AssemblyName>Samples.HelloWorld</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -95,9 +95,9 @@
       <Name>HelloWorldContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.WINDOWS.XNA.csproj">
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.XNA.csproj">
       <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
-      <Name>Aether.Physics2D.WINDOWS.XNA</Name>
+      <Name>Aether.Physics2D.NET40.XNA</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -129,12 +129,4 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
-  <!--
-      To modify your build process, add your task inside one of the targets below and uncomment it. 
-      Other similar extension points exist, see Microsoft.Common.targets.
-      <Target Name="BeforeBuild">
-      </Target>
-      <Target Name="AfterBuild">
-      </Target>
-    -->
 </Project>
