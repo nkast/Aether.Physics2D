@@ -28,20 +28,18 @@ Documentation: https://nkast.github.io/Aether.Physics2D/
 
 # Downloads
 
-https://www.nuget.org/packages/Aether.Physics2D
+https://www.nuget.org/packages/nkast.Aether.Physics2D
 
-**NOTE** From v1.5 the nuget package `Aether.Physics2D` contain the standalone library 
-with no dependencies to 3rd party math libraries. For the monogame library (Vector2, Vector3 etc)
-and the monogame based diagnostics use `Aether.Physics2D.MG` and `Aether.Physics2D.Diagnostics.MG`.
+https://www.nuget.org/packages/nkast.Aether.Physics2D.KNI
 
-https://www.nuget.org/packages/Aether.Physics2D.MG
+https://www.nuget.org/packages/nkast.Aether.Physics2D.Diagnostics.KNI
 
-https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.MG
+https://www.nuget.org/packages/nkast.Aether.Physics2D.MG
 
-https://www.nuget.org/packages/Aether.Physics2D.Diagnostics
- 
+https://www.nuget.org/packages/nkast.Aether.Physics2D.Diagnostics.MG
 
-https://github.com/nkast/Aether.Physics2D/releases/tag/v1.7
+
+https://github.com/nkast/Aether.Physics2D/releases/tag/v2.0
 
 ![LightAndShadowsDemo](Documentation//Images/LightAndShadowsDemo.png)
 
