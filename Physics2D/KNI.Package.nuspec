@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>nkast.Aether.Physics2D.KNI</id>
+    <title>nkast.Aether.Physics2D for KNI</title>
+    <version>2.0.0.0</version>
+    <authors>Kastellanos Nikolaos</authors>
+    <owners>Kastellanos Nikolaos</owners>
+    <license type="expression">MS-PL</license>
+    <projectUrl>https://github.com/nkast/Aether.Physics2D</projectUrl>
+    <icon>icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Aether.Physics2D is a 2D collision detection system.</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright © Kastellanos Nikolaos 2015-2023</copyright>
+    <tags>C# Physics 2D KNI XNA game box2d farseerPhysics farseer</tags>
+
+
+    <dependencies>
+      <dependency id="nkast.Xna.Framework" version="3.9.9001" />
+    </dependencies>
+
+  </metadata>
+
+  <files>
+    <!-- C# Assemblies -->
+    <file src="..\bin\Release\NET40.KNI\Aether.Physics2D.dll"    target="lib\net40\Aether.Physics2D.dll" />
+    <file src="..\bin\Release\NET40.KNI\Aether.Physics2D.xml"    target="lib\net40\Aether.Physics2D.xml" />
+    <file src="..\bin\Release\netstandard2.0.KNI\Aether.Physics2D.dll"    target="lib\netstandard2.0\Aether.Physics2D.dll" />
+    <file src="..\bin\Release\netstandard2.0.KNI\Aether.Physics2D.xml"    target="lib\netstandard2.0\Aether.Physics2D.xml" />
+    <file src="..\bin\Release\UAP.KNI\AnyCPU\Aether.Physics2D.dll" target="lib\netcore50\Aether.Physics2D.dll" />
+    <file src="..\bin\Release\UAP.KNI\AnyCPU\Aether.Physics2D.xml" target="lib\netcore50\Aether.Physics2D.xml" />
+    <file src="..\bin\Release\Android.KNI\Aether.Physics2D.dll" target="lib\monoandroid\Aether.Physics2D.dll" />
+    <file src="..\bin\Release\Android.KNI\Aether.Physics2D.xml" target="lib\monoandroid\Aether.Physics2D.xml" />
+
+    <!-- Nuget Icon -->
+    <file src="..\Icons\NugetLogo.png" target="\icon.png" />
+  </files>
+
+</package>
