@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>nkast.Aether.Physics2D.Diagnostics.MG</id>
-    <title>nkast.Aether.Physics2D.Diagnostics for monogame</title>
-    <version>2.0.0.0</version>
+    <id>Aether.Physics2D.Diagnostics.MG</id>
+    <title>Aether.Physics2D.Diagnostics for monogame</title>
+    <version>2.0.0.1</version>
     <authors>Kastellanos Nikolaos</authors>
     <owners>Kastellanos Nikolaos</owners>
     <license type="expression">MS-PL</license>
@@ -16,7 +16,7 @@
     <tags>C# Physics 2D monogame XNA game box2d farseerPhysics farseer</tags>
 
     <dependencies>
-      <dependency id="nkast.Aether.Physics2D.MG" version="2.0" />
+      <dependency id="Aether.Physics2D.MG" version="2.0" />
     </dependencies>
     
     <contentFiles>

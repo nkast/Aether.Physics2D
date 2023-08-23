@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>nkast.Aether.Physics2D.Diagnostics.KNI</id>
-    <title>nkast.Aether.Physics2D.Diagnostics for KNI</title>
+    <id>Aether.Physics2D.Diagnostics.KNI</id>
+    <title>Aether.Physics2D.Diagnostics for KNI game Framework</title>
     <version>2.0.0.0</version>
     <authors>Kastellanos Nikolaos</authors>
     <owners>Kastellanos Nikolaos</owners>
@@ -16,7 +16,7 @@
     <tags>C# Physics 2D KNI XNA game box2d farseerPhysics farseer</tags>
 
     <dependencies>
-      <dependency id="nkast.Aether.Physics2D.KNI" version="2.0" />
+      <dependency id="Aether.Physics2D.Kni" version="2.0" />
       <dependency id="nkast.Xna.Framework" version="3.9.9001" />
       <!--<dependency id="nkast.Xna.Framework.Graphics" version="3.9.9001" />-->
     </dependencies>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>nkast.Aether.Physics2D.MG</id>
-    <title>nkast.Aether.Physics2D for monogame</title>
+    <id>Aether.Physics2D.MG</id>
+    <title>Aether.Physics2D for monogame</title>
     <version>2.0.0.0</version>
     <authors>Kastellanos Nikolaos</authors>
     <owners>Kastellanos Nikolaos</owners>
