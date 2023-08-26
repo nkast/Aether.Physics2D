@@ -8,13 +8,16 @@ You have forked it to continue to maintain and develop it.
 
 I do not know why you decided to achieve it and then fork a new one.  
 But I feel the better way you can [transfer](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) the project from https://github.com/tainicom to https://github.com/nkast  
+(cause you update in fork, you can pull request to [https://github.com/tainicom ](https://github.com/tainicom/Aether.Physics2D) then transfer it)  
+
 This way can keep all its issues, pull requests, wiki, stars, contributors, and others. see https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository#whats-transferred-with-a-repository  
 This way also helps your repo increase detection by GitHub search. instead of starting with only a few stars on GitHub search, that is waste effort
 That makes it difficult for developers to reach your repo  
 
+
 https://github.com/nkast/Aether.Extras is the same.  
 
-Anyway, thank you.
+Anyway, thank you for contributing.
 
 
 ![image](https://github.com/AEC-Technologies/Aether.Physics2D/assets/48544354/022ae1af-4bc0-41c8-8b2b-e9619e25843d)
