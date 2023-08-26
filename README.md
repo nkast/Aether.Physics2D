@@ -7,7 +7,7 @@ But now, this repo has been archived with a lot of stars (347) on GitHub,
 You have forked it to continue to maintain and develop it.  
 
 I do not know why you decided to achieve it and then fork a new one.  
-But I feel the better way you can transfer the project from https://github.com/tainicom to https://github.com/nkast  
+But I feel the better way you can [transfer](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) the project from https://github.com/tainicom to https://github.com/nkast  
 This way can keep all its issues, pull requests, wiki, stars, contributors, and others. see https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository#whats-transferred-with-a-repository  
 This way also helps your repo increase detection by GitHub search. instead of starting with only a few stars on GitHub search, that is waste effort
 That makes it difficult for developers to reach your repo  
