@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using nkast.Aether.Physics2D.Samples.Demos;
 using nkast.Aether.Physics2D.Samples.ScreenSystem;
 
-namespace Samples.BlazorGL
+namespace nkast.Aether.Physics2D.Samples
 {
     public class Game1 : Game
     {

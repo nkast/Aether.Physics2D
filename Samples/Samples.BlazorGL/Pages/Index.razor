@@ -1,10 +1,12 @@
 ﻿@page "/"
+@page "/index.html"
 @inject IJSRuntime JsRuntime
+@using nkast.Wasm.Canvas
 
+<PageTitle>Samples</PageTitle>
 
-<PageTitle>Index</PageTitle>
-
-<div id="canvasHolder" style="margin:0%;
+<div id="canvasHolder" style="
+    margin:0%;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -15,9 +17,3 @@
 ">
     <canvas id="theCanvas" style="touch-action:none;"></canvas>
 </div>
-<img id="image1" src="icon-192.png" width="100" height="100" style="visibility:collapse;"/>
-
-
-
-
-

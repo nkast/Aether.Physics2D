@@ -11,7 +11,7 @@
     <RootNamespace>nkast.Aether.Physics2D.Samples.Testbed</RootNamespace>
     <AssemblyName>Samples.Testbed</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <KniPlatform>Windows</KniPlatform>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -47,16 +47,14 @@
     <Compile Include="Game1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
-    </PackageReference>
-    <PackageReference Include="MonoGame.Framework.WindowsDX.9000" Version="3.9.9001">
-    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.10.9001" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX.9000" Version="3.10.9001" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="..\TestbedContent\TestbedContent.mgcb">
+    <KniContentReference Include="..\TestbedContent\TestbedContent.mgcb">
       <Link>Content\SamplesContent.mgcb</Link>
-    </MonoGameContentReference>
+    </KniContentReference>
     <Content Include="Game.ico" />
   </ItemGroup>
   <ItemGroup />
@@ -76,5 +74,5 @@
   <Import Project="..\Testbed\Testbed.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\Kni.Content.Builder.targets" />
 </Project>
