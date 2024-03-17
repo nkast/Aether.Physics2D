@@ -26,10 +26,17 @@
   <ItemGroup>
     <PackageReference Include="nkast.Xna.Framework.Blazor" Version="3.10.9001" />
     <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.10.9001-rc" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.11" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.11" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.27" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
+  </ItemGroup>
+	
   <ItemGroup>
     <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI.csproj" />
     <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
