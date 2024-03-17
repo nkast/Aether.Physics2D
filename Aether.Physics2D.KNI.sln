@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.NETSTANDARD2_0.KNI", "Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj", "{33AF8C36-C6C7-45D6-ABD2-1DB069744A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.KNI", "Physics2D\Aether.Physics2D.KNI.csproj", "{33AF8C36-C6C7-45D6-ABD2-1DB069744A69}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI.csproj", "{AB8B88EE-9D10-47F9-AFE3-AEB83BE9B357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Diagnostics.KNI", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.KNI.csproj", "{AB8B88EE-9D10-47F9-AFE3-AEB83BE9B357}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics", "{38EA4C8F-46F2-4463-922D-CF36279C04B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Content.Pipeline", "Aether.Content.Pipeline", "{B00D3507-DA5E-4C0A-8587-5B9087CE1D39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Content.NETSTANDARD2_0.KNI", "Physics2D.Content\Aether.Physics2D.Content.NETSTANDARD2_0.KNI.csproj", "{EF3D924D-D76D-428E-B094-FF3BF39396C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Content.KNI", "Physics2D.Content\Aether.Physics2D.Content.KNI.csproj", "{EF3D924D-D76D-428E-B094-FF3BF39396C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

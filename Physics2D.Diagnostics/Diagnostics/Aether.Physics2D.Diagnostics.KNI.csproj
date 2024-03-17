@@ -48,7 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj" />
   </ItemGroup>
 
 </Project>

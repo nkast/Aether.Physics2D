@@ -42,8 +42,8 @@
   </ItemGroup>
 	
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI.csproj" />
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj" />
+    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.KNI.csproj" />
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

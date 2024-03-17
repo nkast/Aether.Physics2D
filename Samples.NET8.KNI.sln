@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.BlazorGL", "Samples
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Samples", "Samples\Samples\Samples.shproj", "{72DCF07D-A710-4BB9-84D4-B5C11313929C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.NETSTANDARD2_0.KNI", "Physics2D\Aether.Physics2D.NETSTANDARD2_0.KNI.csproj", "{9422D5CA-5E24-423E-944A-494B6ECA6298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.KNI", "Physics2D\Aether.Physics2D.KNI.csproj", "{9422D5CA-5E24-423E-944A-494B6ECA6298}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Physics2D", "Aether.Physics2D", "{E6AA1AE6-2636-4153-86E4-F9E1D509E721}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NETSTANDARD2_0.KNI.csproj", "{A5486E73-E07F-48E8-B208-BBCBE9DAB184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Diagnostics.KNI", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.KNI.csproj", "{A5486E73-E07F-48E8-B208-BBCBE9DAB184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,41 +5,35 @@
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
-    <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
+    <RootNamespace>nkast.Aether.Physics2D.Content</RootNamespace>
+    <AssemblyName>Aether.Physics2D.Content</AssemblyName>
 
-    <OutputPath>..\..\bin\$(Configuration)\netstandard2.0.MG\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\bin\$(Configuration)\netstandard2.0.MG\</OutputPath>
     <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.MG\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>DEBUG;TRACE;NETSTANDARD2_0</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>TRACE;NETSTANDARD2_0</DefineConstants>
+    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="DebugView.cs" />
-    <Compile Include="DebugViewBase.cs" />
-    <Compile Include="DebugViewFlags.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="IPrimitiveBatch.cs" />
-    <Compile Include="PrimitiveBatch.cs" />
+    <Compile Include="Content\ContentReaders\BodyContainerReader.cs" />
+    <Compile Include="Content\ContentReaders\PolygonContainerReader.cs" />
+    <Compile Include="Content\BodyContainer.cs" />
+    <Compile Include="Content\BodyTemplate.cs" />
+    <Compile Include="Content\FixtureTemplate.cs" />
+    <Compile Include="Content\Polygon.cs" />
+    <Compile Include="Content\PolygonContainer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.NETSTANDARD.MG.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Content\DiagnosticsFont.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -50,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NETSTANDARD2_0.MG.csproj" />
+    <ProjectReference Include="..\Physics2D\Aether.Physics2D.MG.csproj" />
   </ItemGroup>
 
 </Project>
