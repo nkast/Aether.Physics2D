@@ -11,7 +11,7 @@
     <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
     <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <KniPlatform>Windows</KniPlatform>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
@@ -53,20 +53,20 @@
     <Compile Include="Properties\AssemblyInfo.NET40.KNI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="..\DiagnosticsContent\DiagnosticsContent.mgcb">
+    <KniContentReference Include="..\DiagnosticsContent\DiagnosticsContent.mgcb">
       <Link>Content\DiagnosticsContent.mgcb</Link>
-    </MonoGameContentReference>
+    </KniContentReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.KNI.csproj">
@@ -81,5 +81,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\Kni.Content.Builder.targets" />
 </Project>

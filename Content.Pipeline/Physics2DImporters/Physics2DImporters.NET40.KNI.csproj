@@ -38,19 +38,19 @@
     <DocumentationFile>..\..\bin\Release\NET40.KNI\Aether.Content.Pipeline.Physics2DImporters.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Graphics" Version="3.9.9001">
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Graphics" Version="3.10.9001">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
