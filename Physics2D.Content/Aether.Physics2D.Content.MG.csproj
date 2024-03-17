@@ -4,13 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <RootNamespace>nkast.Aether.Physics2D.Content</RootNamespace>
     <AssemblyName>Aether.Physics2D.Content</AssemblyName>
 
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <OutputPath>..\bin\$(Configuration)\netstandard2.0.MG\</OutputPath>
-    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.MG\</BaseIntermediateOutputPath>
+    <OutputPath>..\bin\$(Configuration)\MG\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\MG\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 

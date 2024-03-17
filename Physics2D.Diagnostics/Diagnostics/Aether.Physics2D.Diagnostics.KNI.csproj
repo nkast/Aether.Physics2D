@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
     <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
 
-    <OutputPath>..\..\bin\$(Configuration)\netstandard2.0.KNI\</OutputPath>
-    <BaseIntermediateOutputPath>obj\$(Configuration)\netstandard2.0.KNI\</BaseIntermediateOutputPath>
+    <OutputPath>..\..\bin\$(Configuration)\KNI\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\KNI\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
