@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="nkast.Xna.Framework.Blazor" Version="3.10.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.10.9001-rc" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.11" PrivateAssets="all" />
   </ItemGroup>
@@ -41,6 +42,4 @@
   </ItemGroup>
 
   <Import Project="..\Samples\Samples.projitems" Label="Shared" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\Kni.Content.Builder.targets" />
 </Project>
