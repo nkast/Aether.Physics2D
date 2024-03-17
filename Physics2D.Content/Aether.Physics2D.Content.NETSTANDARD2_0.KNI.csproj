@@ -37,12 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.10.9001">
-      <ExcludeAssets>*</ExcludeAssets>
-    </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.10.9001">
-      <ExcludeAssets>*</ExcludeAssets>
-    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.11.9002" />
   </ItemGroup>
 
   <ItemGroup>

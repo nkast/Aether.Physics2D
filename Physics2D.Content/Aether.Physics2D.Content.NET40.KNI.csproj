@@ -53,14 +53,8 @@
     <Compile Include="Properties\AssemblyInfo.NET40.KNI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.10.9001">
-      <PrivateAssets>all</PrivateAssets>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework.Ref" Version="3.10.9001">
-      <PrivateAssets>all</PrivateAssets>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.11.9002" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
   </ItemGroup>
