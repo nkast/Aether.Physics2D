@@ -26,7 +26,7 @@
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\NET40.XNA\</OutputPath>
-    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;WINDOWS;XNA;NET40</DefineConstants>
+    <DefineConstants>TRACE;XNAAPI;WINDOWS;XNA;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>

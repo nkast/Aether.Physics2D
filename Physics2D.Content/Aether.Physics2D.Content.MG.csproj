@@ -12,7 +12,7 @@
     <OutputPath>..\bin\$(Configuration)\MG\</OutputPath>
     <BaseIntermediateOutputPath>obj\$(Configuration)\MG\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DefineConstants>LEGACY_ASYNCADDREMOVE;XNAAPI</DefineConstants>
+    <DefineConstants>XNAAPI</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
