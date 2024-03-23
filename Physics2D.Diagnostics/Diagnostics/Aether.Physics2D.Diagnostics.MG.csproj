@@ -8,19 +8,16 @@
     <RootNamespace>nkast.Aether.Physics2D.Diagnostics</RootNamespace>
     <AssemblyName>Aether.Physics2D.Diagnostics</AssemblyName>
 
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <OutputPath>..\..\bin\$(Configuration)\MG\</OutputPath>
     <BaseIntermediateOutputPath>obj\$(Configuration)\MG\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

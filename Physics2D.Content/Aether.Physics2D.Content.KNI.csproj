@@ -12,14 +12,13 @@
     <OutputPath>..\bin\$(Configuration)\KNI\</OutputPath>
     <BaseIntermediateOutputPath>obj\$(Configuration)\KNI\</BaseIntermediateOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DefineConstants>KNI</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>DEBUG;TRACE;KNI</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE;KNI</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
