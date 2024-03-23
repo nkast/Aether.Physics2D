@@ -326,7 +326,7 @@ namespace nkast.Aether.Physics2D.Dynamics
 
         internal void Collide()
         {
-#if NET40 || NET45 || NETSTANDARD2_0 || W10
+#if NET40 || NET45 || NETSTANDARD2_0
             if (this.ContactCount > CollideMultithreadThreshold && System.Environment.ProcessorCount > 1)
             {
                 CollideMultiCore();
@@ -439,7 +439,7 @@ namespace nkast.Aether.Physics2D.Dynamics
         /// </summary>
         List<Contact> updateList = new List<Contact>();
 
-#if NET40 || NET45 || NETSTANDARD2_0 || W10
+#if NET40 || NET45 || NETSTANDARD2_0
         internal void CollideMultiCore()
         {
             int lockOrder = 0;
