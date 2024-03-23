@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net4.0;netstandard2.0;net8.0</TargetFrameworks>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ProjectGuid>{A4B5353E-A5DD-4A2B-9793-107EE6F75178}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>nkast.Aether.Content.Pipeline</RootNamespace>
+    <AssemblyName>Aether.Content.Pipeline.Physics2DImporters</AssemblyName>
+
+    <OutputPath>..\..\bin\$(Configuration)\KNI\</OutputPath>
+    <BaseIntermediateOutputPath>obj\$(Configuration)\KNI\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DefineConstants>KNI;WINDOWS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BodyContainerContent.cs" />
+    <Compile Include="BodyTemplateContent.cs" />
+    <Compile Include="FixtureTemplateContent.cs" />
+    <Compile Include="PolygonContent.cs" />
+    <Compile Include="RawFixtureTemplateContent.cs" />
+    <Compile Include="Serialization\BodyContainerWriter.cs" />
+    <Compile Include="Processors\BodyProcessor.cs" />
+    <Compile Include="Processors\Physics2DTextureProcessor.cs" />
+    <Compile Include="PolygonContainerContent.cs" />
+    <Compile Include="Physics2DSVGImporter.cs" />
+    <Compile Include="Processors\PolygonProcessor.cs" />
+    <Compile Include="Serialization\PolygonContainerWriter.cs" />
+    <Compile Include="RawBodyTemplateContent.cs" />
+    <Compile Include="SVGPathParser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.KNI.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Graphics" Version="3.11.9002" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj" />
+  </ItemGroup>
+
+
+</Project>

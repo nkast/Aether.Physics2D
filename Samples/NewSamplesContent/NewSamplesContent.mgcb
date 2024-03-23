@@ -10,7 +10,7 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\bin\Debug\NET40.KNI\Aether.Content.Pipeline.Physics2DImporters.dll
+/reference:..\..\bin\Debug\KNI\netstandard2.0\Aether.Content.Pipeline.Physics2DImporters.dll
 
 #---------------------------------- Content ---------------------------------#
 

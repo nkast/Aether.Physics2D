@@ -58,19 +58,18 @@
     </KniContentReference>
     <Content Include="Game.ico" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.KNI.csproj">
+      <Project>{7524afc6-7317-484c-8902-cf1f493edbc9}</Project>
+      <Name>Aether.Physics2D.Diagnostics.KNI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj">
+      <Project>{ddd21854-d7d1-4296-90f6-bc8ba2124eab}</Project>
+      <Name>Aether.Physics2D.KNI</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.NET40.KNI.csproj">
-      <Project>{7acac54b-a591-4ab8-806a-8e2bc720101f}</Project>
-      <Name>Aether.Physics2D.Diagnostics.NET40.KNI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.KNI.csproj">
-      <Project>{7EA2411A-5448-4ABA-9BC0-F8C308F820E7}</Project>
-      <Name>Aether.Physics2D.NET40.KNI</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="..\Testbed\Testbed.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
