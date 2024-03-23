@@ -36,7 +36,7 @@ using nkast.Aether.Physics2D.Common;
 using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
 using System.Threading;
 using System.Threading.Tasks;
 #endif
@@ -369,7 +369,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
                 var batchSize = (int)Math.Ceiling((float)_count / System.Environment.ProcessorCount);
                 var batches = (int)Math.Ceiling((float)_count / batchSize);
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 SolveVelocityConstraintsWaitLock.Reset(batches);
                 for (int i = 0; i < batches; i++)
                 {
@@ -392,7 +392,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
             return;
         }
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
         CountdownEvent SolveVelocityConstraintsWaitLock = new CountdownEvent(0);
         static void SolveVelocityConstraintsCallback(object state)
         {
@@ -441,7 +441,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
             {
                 ContactVelocityConstraint vc = _velocityConstraints[i];
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 // find lower order item
                 int orderedIndexA = vc.indexA;
                 int orderedIndexB = vc.indexB;
@@ -765,7 +765,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
                 _velocities[indexB].v = vB;
                 _velocities[indexB].w = wB;
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexB], 0);
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexA], 0);
 #endif
@@ -801,7 +801,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
                 var batchSize = (int)Math.Ceiling((float)_count / System.Environment.ProcessorCount);
                 var batches = (int)Math.Ceiling((float)_count / batchSize);
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 Parallel.For(0, batches, (i) =>
                 {
                     var start = i * batchSize;
@@ -832,7 +832,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
             {
                 ContactPositionConstraint pc = _positionConstraints[i];
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 // Find lower order item.
                 int orderedIndexA = pc.indexA;
                 int orderedIndexB = pc.indexB;
@@ -916,7 +916,7 @@ namespace nkast.Aether.Physics2D.Dynamics.Contacts
                 _positions[indexB].c = cB;
                 _positions[indexB].a = aB;
 
-#if NET40 || NET45 || NETSTANDARD2_0
+#if NET40 || NET45 || NETSTANDARD2_0_OR_GREATER
                 // Unlock bodies.
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexB], 0);
                 System.Threading.Interlocked.Exchange(ref _locks[orderedIndexA], 0);

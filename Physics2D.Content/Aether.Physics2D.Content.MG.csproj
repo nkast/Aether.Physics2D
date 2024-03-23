@@ -15,11 +15,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI;NETSTANDARD2_0</DefineConstants>
+    <DefineConstants>TRACE;LEGACY_ASYNCADDREMOVE;XNAAPI</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
