@@ -95,9 +95,9 @@
       <Name>HelloWorldContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
-    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.NET40.XNA.csproj">
+    <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.XNA.csproj">
       <Project>{96A2FDD8-E119-4441-B413-C07BF4AB41FA}</Project>
-      <Name>Aether.Physics2D.NET40.XNA</Name>
+      <Name>Aether.Physics2D.XNA</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
