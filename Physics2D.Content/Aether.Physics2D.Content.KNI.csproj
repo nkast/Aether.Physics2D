@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.NETSTANDARD.KNI.cs" />
+    <Compile Include="Properties\AssemblyInfo.KNI.cs" />
   </ItemGroup>
 
   <ItemGroup>
