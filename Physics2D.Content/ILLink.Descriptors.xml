@@ -1,0 +1,7 @@
+<linker>
+  <assembly fullname="Aether.Physics2D.Content" >
+	  <type fullname="nkast.Aether.Physics2D.Content.PolygonContainerReader" preserve="all" />
+	  <type fullname="nkast.Aether.Physics2D.Content.BodyContainerReader" preserve="all" />
+  </assembly>
+</linker>
+
