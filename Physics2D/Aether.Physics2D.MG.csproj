@@ -144,7 +144,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.NETSTANDARD.MG.cs" />
+    <Compile Include="Properties\AssemblyInfo.MG.cs" />
   </ItemGroup>
 
   <ItemGroup>
