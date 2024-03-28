@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net4.0;netstandard2.0;net8.0</TargetFrameworks>
+	<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsTrimmable>
     <EnableDefaultItems>false</EnableDefaultItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
