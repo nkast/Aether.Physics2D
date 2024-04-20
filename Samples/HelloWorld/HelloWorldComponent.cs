@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -64,7 +61,7 @@ namespace nkast.Aether.Physics2D.Samples
 
             // Create the player fixture
             _playerBody = _world.CreateBody(playerPosition, 0, BodyType.Dynamic);
-            var pfixture = _playerBody.CreateCircle(_playerBodyRadius, 1f);
+            Fixture pfixture = _playerBody.CreateCircle(_playerBodyRadius, 1f);
 
             // Give it some bounce and friction
             pfixture.Restitution = 0.3f;
@@ -76,7 +73,7 @@ namespace nkast.Aether.Physics2D.Samples
 
             // Create the ground fixture
             _groundBody = _world.CreateBody(groundPosition, 0, BodyType.Static);
-            var gfixture = _groundBody.CreateRectangle(_groundBodySize.X, _groundBodySize.Y, 1f, Vector2.Zero);
+            Fixture gfixture = _groundBody.CreateRectangle(_groundBodySize.X, _groundBodySize.Y, 1f, Vector2.Zero);
 
             gfixture.Restitution = 0.3f;
             gfixture.Friction = 0.5f;
@@ -127,10 +124,7 @@ namespace nkast.Aether.Physics2D.Samples
             {
                 if (padState.Buttons.Back == ButtonState.Pressed)
                 {
-                    try
-                    {
-                        Game.Exit();
-                    }
+                    try { Game.Exit(); }
                     catch (PlatformNotSupportedException) { /* ignore */ }
                 }
 
@@ -150,8 +144,8 @@ namespace nkast.Aether.Physics2D.Samples
         {
             KeyboardState state = Keyboard.GetState();
             float totalSeconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            
-            var vp = GraphicsDevice.Viewport;
+
+            Viewport vp = GraphicsDevice.Viewport;
 
             // Move camera
             if (state.IsKeyDown(Keys.Left))
@@ -179,10 +173,7 @@ namespace nkast.Aether.Physics2D.Samples
 
             if (state.IsKeyDown(Keys.Escape))
             {
-                try
-                {
-                    Game.Exit();
-                }
+                try { Game.Exit(); }
                 catch(PlatformNotSupportedException) { /* ignore */ }
             }
 
