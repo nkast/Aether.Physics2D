@@ -20,7 +20,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>$(DefineConstants);BLAZORGL</DefineConstants>
-    <RunAOTCompilation>False</RunAOTCompilation>
+    <RunAOTCompilation>True</RunAOTCompilation>
   </PropertyGroup>
 
   <ItemGroup>
