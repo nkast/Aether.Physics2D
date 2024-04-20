@@ -28,15 +28,15 @@ Documentation: https://nkast.github.io/Aether.Physics2D/
 
 # Downloads
 
-https://www.nuget.org/packages/nkast.Aether.Physics2D
+https://www.nuget.org/packages/Aether.Physics2D
 
-https://www.nuget.org/packages/nkast.Aether.Physics2D.KNI
+https://www.nuget.org/packages/Aether.Physics2D.KNI
 
-https://www.nuget.org/packages/nkast.Aether.Physics2D.Diagnostics.KNI
+https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.KNI
 
-https://www.nuget.org/packages/nkast.Aether.Physics2D.MG
+https://www.nuget.org/packages/Aether.Physics2D.MG
 
-https://www.nuget.org/packages/nkast.Aether.Physics2D.Diagnostics.MG
+https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.MG
 
 
 https://github.com/nkast/Aether.Physics2D/releases/tag/v2.0
