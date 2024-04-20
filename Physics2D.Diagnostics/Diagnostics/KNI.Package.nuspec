@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Aether.Physics2D.Diagnostics.KNI</id>
+    <title>Aether.Physics2D.Diagnostics for KNI game Framework</title>
+    <version>2.0.0.0</version>
+    <authors>Kastellanos Nikolaos</authors>
+    <owners>Kastellanos Nikolaos</owners>
+    <license type="expression">MS-PL</license>
+    <projectUrl>https://github.com/nkast/Aether.Physics2D</projectUrl>
+    <icon>icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Aether.Physics2D is a 2D collision detection system.</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright © Kastellanos Nikolaos 2015-2023</copyright>
+    <tags>C# Physics 2D KNI XNA game box2d farseerPhysics farseer</tags>
+
+    <dependencies>
+      <dependency id="Aether.Physics2D.Kni" version="2.0" />
+      <dependency id="nkast.Xna.Framework" version="3.9.9001" />
+      <!--<dependency id="nkast.Xna.Framework.Graphics" version="3.9.9001" />-->
+    </dependencies>
+    
+    <contentFiles>
+      <files include="**\Content\*.xnb"  buildAction="None" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+
+  <files>
+    <!-- C# Assemblies -->
+    <file src="..\bin\Release\NET40.KNI\Aether.Physics2D.Diagnostics.dll"  target="lib\net40\Aether.Physics2D.Diagnostics.dll" />
+    <file src="..\bin\Release\NET40.KNI\Aether.Physics2D.Diagnostics.xml"  target="lib\net40\Aether.Physics2D.Diagnostics.xml" />
+    <file src="..\bin\Release\netstandard2.0.KNI\Aether.Physics2D.Diagnostics.dll"   target="lib\netstandard2.0\Aether.Physics2D.Diagnostics.dll" />
+    <file src="..\bin\Release\netstandard2.0.KNI\Aether.Physics2D.Diagnostics.xml"   target="lib\netstandard2.0\Aether.Physics2D.Diagnostics.xml" />
+
+    <!-- content -->
+    <file src="..\bin\Release\NET40.KNI\Content\*.xnb" target="Content\Content" />
+    
+    <!-- contentFiles -->
+    <file src="..\bin\Release\NET40.KNI\Content\*.xnb" target="contentFiles\any\any\Content" />
+
+    <!-- Nuget Icon -->
+    <file src="..\Icons\NugetLogo.png" target="\icon.png" />
+  </files>
+
+</package>

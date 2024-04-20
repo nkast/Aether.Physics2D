@@ -1,0 +1,15 @@
+﻿<Project>
+  <PropertyGroup>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/nkast/Aether.Physics2D</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nkast/Aether.Physics2D</RepositoryUrl>
+    <Authors>Kastellanos Nikolaos</Authors>
+    <copyright>Copyright © Kastellanos Nikolaos 2015-2024</copyright>
+    <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Icons\NugetLogo.png" Pack="true" PackagePath="\icon.png" />
+  </ItemGroup>
+</Project>
+
