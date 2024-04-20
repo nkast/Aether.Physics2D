@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Physics2D", "Aether.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Physics2D.Diagnostics.KNI", "Physics2D.Diagnostics\Diagnostics\Aether.Physics2D.Diagnostics.KNI.csproj", "{A5486E73-E07F-48E8-B208-BBCBE9DAB184}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.BlazorGL", "Samples\HelloWorld.BlazorGL\HelloWorld.BlazorGL.csproj", "{586B71AA-A664-414A-9F93-321C71AEDB6F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelloWorld", "Samples\HelloWorld\HelloWorld.shproj", "{9788674C-C031-4604-ADF8-86FF678FCAB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{A5486E73-E07F-48E8-B208-BBCBE9DAB184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5486E73-E07F-48E8-B208-BBCBE9DAB184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5486E73-E07F-48E8-B208-BBCBE9DAB184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{586B71AA-A664-414A-9F93-321C71AEDB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586B71AA-A664-414A-9F93-321C71AEDB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586B71AA-A664-414A-9F93-321C71AEDB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586B71AA-A664-414A-9F93-321C71AEDB6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,7 +51,9 @@ Global
 		SolutionGuid = {0F98FC1A-5156-4B81-9D44-672740D59C35}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Samples\HelloWorld\HelloWorld.projitems*{586b71aa-a664-414a-9f93-321c71aedb6f}*SharedItemsImports = 5
 		Samples\Samples\Samples.projitems*{72dcf07d-a710-4bb9-84d4-b5c11313929c}*SharedItemsImports = 13
+		Samples\HelloWorld\HelloWorld.projitems*{9788674c-c031-4604-adf8-86ff678fcab1}*SharedItemsImports = 13
 		Samples\Samples\Samples.projitems*{e747d7e7-c7a5-4973-a2bb-0e5c2be4a45f}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

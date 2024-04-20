@@ -88,7 +88,7 @@ namespace nkast.Aether.Physics2D.Samples
             _spriteBatchEffect = new BasicEffect(Game.GraphicsDevice);
             _spriteBatchEffect.TextureEnabled = true;
 
-            _font = Game.Content.Load<SpriteFont>("font");
+            _font = Game.Content.Load<SpriteFont>("Font");
 
             // Load sprites
             _playerTexture = Game.Content.Load<Texture2D>("CircleSprite");
@@ -117,7 +117,9 @@ namespace nkast.Aether.Physics2D.Samples
 
         private void HandleGamePad(GameTime gameTime)
         {
-            GamePadState padState = GamePad.GetState(0);
+            GamePadState padState = default(GamePadState);
+            try { padState = GamePad.GetState(0); }
+            catch(NotImplementedException niex) { /* ignore */ }
             float totalSeconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             if (padState.IsConnected)
