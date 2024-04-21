@@ -7,6 +7,7 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <Description>Aether.Physics2D is a 2D collision detection system.</Description>
     <PackageTags>C# Physics 2D game box2d farseerPhysics farseer KNI</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -62,6 +63,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

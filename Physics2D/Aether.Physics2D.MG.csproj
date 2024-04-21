@@ -7,6 +7,7 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <Description>Aether.Physics2D is a 2D collision detection system.</Description>
     <PackageTags>C# Physics 2D game box2d farseerPhysics farseer MonoGame</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -161,6 +162,13 @@
       <ExcludeAssets>*</ExcludeAssets>
       <NoWarn>NU1701</NoWarn>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
