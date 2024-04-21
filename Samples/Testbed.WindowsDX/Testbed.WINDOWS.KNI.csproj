@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <RollForward>Major</RollForward>
     <UseWindowsForms>true</UseWindowsForms>
     <ProjectGuid>{7D0489E0-B912-43F8-8859-6C015C5B93F6}</ProjectGuid>
