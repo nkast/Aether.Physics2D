@@ -8,12 +8,12 @@ using System.Reflection;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Aether.Physics2D")]
-[assembly: AssemblyCopyright("Copyright Ian Qvist © 2013, Copyright © Kastellanos Nikolaos 2015-2023")]
+[assembly: AssemblyCopyright("Copyright Ian Qvist © 2013, Copyright © Kastellanos Nikolaos 2015-2024")]
 [assembly: AssemblyTrademark("Aether Engine (tm)")]
 [assembly: AssemblyCulture("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.1.0.0")]
+[assembly: AssemblyFileVersion("2.1.0.0")]
