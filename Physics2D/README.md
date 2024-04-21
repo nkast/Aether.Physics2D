@@ -2,11 +2,7 @@
 
 Aether.Physics2D is a 2D collision detection system.
 
-[![Discord](https://img.shields.io/discord/780484381961093172?style=flat)](https://discord.gg/95nPEjZ6mu)
-
 Documentation: https://nkast.github.io/Aether.Physics2D/
-
-![3DCameraDemo](Documentation//Images/3DCameraDemo.png)
 
 Web Demos:
  - [HelloWorld](https://nkast.github.io/Aether.Physics2D/wasm/HelloWorld/)
@@ -61,26 +57,7 @@ Web Demos:
     _world.Step(dt);
 
 
-## Downloads
-
-https://www.nuget.org/packages/Aether.Physics2D
-
-https://www.nuget.org/packages/Aether.Physics2D.KNI
-
-https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.KNI
-
-https://www.nuget.org/packages/Aether.Physics2D.MG
-
-https://www.nuget.org/packages/Aether.Physics2D.Diagnostics.MG
-
-
-https://github.com/nkast/Aether.Physics2D/releases/tag/v2.0
-
-![LightAndShadowsDemo](Documentation//Images/LightAndShadowsDemo.png)
-
 ## Sponsors ❤️
 
 While Aether.Physics2D is free and open-source, maintaining and expanding the library requires ongoing effort and resources. We rely on the support of our community to continue delivering top-notch updates, features, and support.
 By [becoming a Sponsor](https://github.com/sponsors/nkast), you can directly contribute to the growth and sustainability of Aether.Physics2D. 
-
-<!-- sponsors --><a href="https://github.com/damian-666"><img src="https://github.com/damian-666.png" width="60px" alt="Damian" /></a><a href="https://github.com/KeithRiskey"><img src="https://github.com/KeithRiskey.png" width="60px" alt="Keith Riskey" /></a><a href="https://github.com/MutsiMutsi"><img src="https://github.com/MutsiMutsi.png" width="60px" alt="Mitchel Disveld" /></a><!-- sponsors -->
