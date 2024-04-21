@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testbed.WINDOWS.KNI", "Samples\Testbed.WindowsDX\Testbed.WINDOWS.KNI.csproj", "{7D0489E0-B912-43F8-8859-6C015C5B93F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testbed.WINDOWS.KNI", "Samples\Testbed.WindowsDX\Testbed.WINDOWS.KNI.csproj", "{7D0489E0-B912-43F8-8859-6C015C5B93F6}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Testbed", "Samples\Testbed\Testbed.shproj", "{4A534FA0-4CF4-4CBD-98E3-1FDC22A5770B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WINDOWS.KNI", "Samples\Samples.WindowsDX\Samples.WINDOWS.KNI.csproj", "{E4BBD53B-8677-4C90-9CA2-9B8FC186E8FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.WINDOWS.KNI", "Samples\Samples.WindowsDX\Samples.WINDOWS.KNI.csproj", "{E4BBD53B-8677-4C90-9CA2-9B8FC186E8FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{95CC7850-C716-48DC-84EC-4735CDABF818}"
 EndProject
@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aether.Content.Pipeline", "Aether.Content.Pipeline", "{647EE16B-DEB6-4BB0-9383-9F9BF714BEB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Physics2DImporters.KNI", "Content.Pipeline\Physics2DImporters\Physics2DImporters.KNI.csproj", "{A4B5353E-A5DD-4A2B-9793-107EE6F75178}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Physics2DImporters.KNI", "Content.Pipeline\Physics2DImporters\Physics2DImporters.KNI.csproj", "{A4B5353E-A5DD-4A2B-9793-107EE6F75178}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.WINDOWS.KNI", "Samples\HelloWorld.WindowsDX\HelloWorld.WINDOWS.KNI.csproj", "{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.WINDOWS.KNI", "Samples\HelloWorld.WindowsDX\HelloWorld.WINDOWS.KNI.csproj", "{F2DDED87-5B5C-4E2C-A675-30D72DEF897E}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelloWorld", "Samples\HelloWorld\HelloWorld.shproj", "{9788674C-C031-4604-ADF8-86FF678FCAB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewSamples.WINDOWS.KNI", "Samples\NewSamples.WindowsDX\NewSamples.WINDOWS.KNI.csproj", "{AB279FE5-6D8D-480C-8B93-D0312CFE7D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewSamples.WINDOWS.KNI", "Samples\NewSamples.WindowsDX\NewSamples.WINDOWS.KNI.csproj", "{AB279FE5-6D8D-480C-8B93-D0312CFE7D3B}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NewSamples", "Samples\NewSamples\NewSamples.shproj", "{636BBB3D-346B-41F6-8F7E-7E26A11C4BEE}"
 EndProject
@@ -95,10 +95,10 @@ Global
 		Samples\Testbed\Testbed.projitems*{4a534fa0-4cf4-4cbd-98e3-1fdc22a5770b}*SharedItemsImports = 13
 		Samples\NewSamples\NewSamples.projitems*{636bbb3d-346b-41f6-8f7e-7e26a11c4bee}*SharedItemsImports = 13
 		Samples\Samples\Samples.projitems*{72dcf07d-a710-4bb9-84d4-b5c11313929c}*SharedItemsImports = 13
-		Samples\Testbed\Testbed.projitems*{7d0489e0-b912-43f8-8859-6c015c5b93f6}*SharedItemsImports = 4
+		Samples\Testbed\Testbed.projitems*{7d0489e0-b912-43f8-8859-6c015c5b93f6}*SharedItemsImports = 5
 		Samples\HelloWorld\HelloWorld.projitems*{9788674c-c031-4604-adf8-86ff678fcab1}*SharedItemsImports = 13
-		Samples\NewSamples\NewSamples.projitems*{ab279fe5-6d8d-480c-8b93-d0312cfe7d3b}*SharedItemsImports = 4
-		Samples\Samples\Samples.projitems*{e4bbd53b-8677-4c90-9ca2-9b8fc186e8fd}*SharedItemsImports = 4
-		Samples\HelloWorld\HelloWorld.projitems*{f2dded87-5b5c-4e2c-a675-30d72def897e}*SharedItemsImports = 4
+		Samples\NewSamples\NewSamples.projitems*{ab279fe5-6d8d-480c-8b93-d0312cfe7d3b}*SharedItemsImports = 5
+		Samples\Samples\Samples.projitems*{e4bbd53b-8677-4c90-9ca2-9b8fc186e8fd}*SharedItemsImports = 5
+		Samples\HelloWorld\HelloWorld.projitems*{f2dded87-5b5c-4e2c-a675-30d72def897e}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
