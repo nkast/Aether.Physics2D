@@ -158,7 +158,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.Portable" Version="3.2.99.1-Beta">
+    <PackageReference Include="MonoGame.Framework.Portable" Version="3.2.99.1-Beta" PrivateAssets="All">
       <ExcludeAssets>*</ExcludeAssets>
       <NoWarn>NU1701</NoWarn>
     </PackageReference>
