@@ -894,6 +894,23 @@ window.nkCanvasGLContext =
         gc.bufferSubData(bt, of, dt);
     },
 
+    BufferSubData1: function (uid, d)
+    {
+        var gc = nkJSObject.GetObject(uid);
+        var bt = Blazor.platform.readInt32Field(d, 0);
+        var of = Blazor.platform.readInt32Field(d, 4);
+        var si = Blazor.platform.readInt32Field(d, 8);
+        var ln = Blazor.platform.readInt32Field(d, 12);
+        var st = Blazor.platform.readInt32Field(d, 16);
+        var arr = Blazor.platform.readInt32Field(d, 20);
+
+        var arrPtr = Blazor.platform.getArrayEntryPtr(arr, 0, 4);
+        //var arrLen = Blazor.platform.getArrayLength(arr);
+        var dt = new Uint8Array(Module.HEAPU8.buffer, arrPtr + si * st, ln * st);
+
+        gc.bufferSubData(bt, of, dt);
+    },
+
     VertexAttribPointer: function (uid, d)
     {
         var gc = nkJSObject.GetObject(uid);
@@ -982,4 +999,20 @@ window.nkCanvasGLContext =
         return gc.getError();
     },
 
+};
+
+window.nkCanvasGL2Context =
+{
+    DrawRangeElements: function (uid, d)
+    {
+        var gc = nkJSObject.GetObject(uid);
+        var md = Blazor.platform.readInt32Field(d, 0);
+        var st = Blazor.platform.readInt32Field(d, 4);
+        var en = Blazor.platform.readInt32Field(d, 8);
+        var ct = Blazor.platform.readInt32Field(d, 12);
+        var tp = Blazor.platform.readInt32Field(d, 16);
+        var of = Blazor.platform.readInt32Field(d, 20);
+
+        gc.drawRangeElements(md, st, en, ct, tp, of);
+    },
 };

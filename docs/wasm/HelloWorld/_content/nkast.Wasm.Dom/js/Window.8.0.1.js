@@ -6,6 +6,12 @@
         var d = w.document;
         return nkJSObject.RegisterObject(d);
     },
+    GetNavigator: function(uid)
+    {
+        var w = nkJSObject.GetObject(uid);
+        var n = w.navigator;
+        return nkJSObject.RegisterObject(n);
+    },
     GetInnerWidth: function(uid)
     {
         var w = nkJSObject.GetObject(uid);
@@ -60,12 +66,12 @@
         window.onkeydown = function(event)
         {
             DotNet.invokeMethod('nkast.Wasm.Dom', 'JsWindowOnKeyDown', uid,
-                event.key.charCodeAt(0), event.keyCode);
+                event.key.charCodeAt(0), event.keyCode, event.location);
         };
         window.onkeyup = function(event)
         {
             DotNet.invokeMethod('nkast.Wasm.Dom', 'JsWindowOnKeyUp', uid,
-                event.key.charCodeAt(0), event.keyCode);
+                event.key.charCodeAt(0), event.keyCode, event.location);
         };
 
         if ('ontouchstart' in window)
@@ -106,5 +112,16 @@
             };
         }
 
+        window.addEventListener("gamepadconnected", (event) =>
+        {
+            DotNet.invokeMethod('nkast.Wasm.Dom', 'JsWindowGamepadConnected', uid,
+                event.gamepad.index);
+        });
+        window.addEventListener("gamepaddisconnected", (event) =>
+        {
+            DotNet.invokeMethod('nkast.Wasm.Dom', 'JsWindowGamepadDisconnected', uid,
+                event.gamepad.index);
+        });
+        
     }
 };

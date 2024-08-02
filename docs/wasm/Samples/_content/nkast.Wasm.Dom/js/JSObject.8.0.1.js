@@ -13,21 +13,25 @@
         {
             nkJSObject.objectMap.push(obj);
             var uid = nkJSObject.objectMap.lastIndexOf(obj);
+            uid++;
             return uid;
         }
         else
         {
             var uid = nkJSObject.emptySlots.pop();
             nkJSObject.objectMap[uid] = obj;
+            uid++;
             return uid;
         }
     },
     GetObject: function(uid)
     {
+        uid--;
         return nkJSObject.objectMap[uid];
     },
     DisposeObject: function(uid)
     {
+        uid--;
         delete nkJSObject.objectMap[uid];
         nkJSObject.emptySlots.push(uid);
     },
