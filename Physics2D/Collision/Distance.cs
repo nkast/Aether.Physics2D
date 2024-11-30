@@ -44,7 +44,7 @@ namespace nkast.Aether.Physics2D.Collision
     public struct DistanceProxy
     {
         internal float Radius;
-        internal List<Vector2> Vertices;
+        internal Vector2[] Vertices;
 
         // GJK using Voronoi regions (Christer Ericson) and Barycentric coordinates.
 
@@ -61,8 +61,8 @@ namespace nkast.Aether.Physics2D.Collision
                 case ShapeType.Circle:
                     {
                         CircleShape circle = (CircleShape)shape;
-                        Vertices = new List<Vector2>(1);
-                        Vertices.Add(circle.Position);
+                        Vertices = new Vector2[1];
+                        Vertices[0] = circle.Position;
                         Radius = circle.Radius;
                     }
                     break;
@@ -70,10 +70,10 @@ namespace nkast.Aether.Physics2D.Collision
                 case ShapeType.Polygon:
                     {
                         PolygonShape polygon = (PolygonShape)shape;
-                        Vertices = new List<Vector2>(polygon.Vertices.Count);
+                        Vertices = new Vector2[polygon.Vertices.Count];
                         for (int i = 0; i < polygon.Vertices.Count; i++)
                         {
-                            Vertices.Add(polygon.Vertices[i]);
+                            Vertices[i] = polygon.Vertices[i];
                         }
                         Radius = polygon.Radius;
                     }
@@ -83,10 +83,11 @@ namespace nkast.Aether.Physics2D.Collision
                     {
                         ChainShape chain = (ChainShape)shape;
                         Debug.Assert(0 <= index && index < chain.Vertices.Count);
-                        Vertices = new List<Vector2>(2);
-                        Vertices.Add(chain.Vertices[index]);
-                        Vertices.Add(index + 1 < chain.Vertices.Count ? chain.Vertices[index + 1] : chain.Vertices[0]);
-
+                        Vertices = new Vector2[2];
+                        Vertices[0] = chain.Vertices[index];
+                        Vertices[1] = (index + 1 < chain.Vertices.Count)
+                                    ? chain.Vertices[index + 1]
+                                    : chain.Vertices[0];
                         Radius = chain.Radius;
                     }
                     break;
@@ -94,15 +95,15 @@ namespace nkast.Aether.Physics2D.Collision
                 case ShapeType.Edge:
                     {
                         EdgeShape edge = (EdgeShape)shape;
-                        Vertices = new List<Vector2>(2);
-                        Vertices.Add(edge.Vertex1);
-                        Vertices.Add(edge.Vertex2);
+                        Vertices = new Vector2[2];
+                        Vertices[0] = edge.Vertex1;
+                        Vertices[1] = edge.Vertex2;
                         Radius = edge.Radius;
                     }
                     break;
 
                 default:
-                    Vertices = new List<Vector2>();
+                    Vertices = new Vector2[0];
                     Radius = 0;
                     Debug.Assert(false);
                     break;
@@ -118,7 +119,7 @@ namespace nkast.Aether.Physics2D.Collision
         {
             int bestIndex = 0;
             float bestValue = Vector2.Dot(Vertices[0], direction);
-            for (int i = 1; i < Vertices.Count; ++i)
+            for (int i = 1; i < Vertices.Length; ++i)
             {
                 float value = Vector2.Dot(Vertices[i], direction);
                 if (value > bestValue)
@@ -140,7 +141,7 @@ namespace nkast.Aether.Physics2D.Collision
         {
             int bestIndex = 0;
             float bestValue = Vector2.Dot(Vertices[0], direction);
-            for (int i = 1; i < Vertices.Count; ++i)
+            for (int i = 1; i < Vertices.Length; ++i)
             {
                 float value = Vector2.Dot(Vertices[i], direction);
                 if (value > bestValue)
