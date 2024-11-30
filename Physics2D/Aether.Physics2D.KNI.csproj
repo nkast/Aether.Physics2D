@@ -165,7 +165,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.11.9002" />
+    <PackageReference Include="nkast.Xna.Framework" Version="3.14.9001" />
   </ItemGroup>
 
   <ItemGroup>
