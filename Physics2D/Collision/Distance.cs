@@ -26,6 +26,7 @@
 */
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using nkast.Aether.Physics2D.Collision.Shapes;
 using nkast.Aether.Physics2D.Common;
@@ -43,7 +44,7 @@ namespace nkast.Aether.Physics2D.Collision
     public struct DistanceProxy
     {
         internal float Radius;
-        internal Vertices Vertices;
+        internal List<Vector2> Vertices;
 
         // GJK using Voronoi regions (Christer Ericson) and Barycentric coordinates.
 
@@ -55,7 +56,7 @@ namespace nkast.Aether.Physics2D.Collision
         /// <param name="index">The index.</param>
         public DistanceProxy(Shape shape, int index)
         {
-            Vertices = new Vertices();
+            Vertices = new List<Vector2>();
 
             switch (shape.ShapeType)
             {
