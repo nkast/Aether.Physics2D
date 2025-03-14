@@ -8,7 +8,7 @@ using System.Reflection;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Aether.Physics2D")]
-[assembly: AssemblyCopyright("Copyright Ian Qvist © 2013, Copyright © Kastellanos Nikolaos 2015-2024")]
+[assembly: AssemblyCopyright("Copyright © Kastellanos Nikolaos 2015-2024, Copyright Ian Qvist © 2013, Copyright © 2009 Brandon Furtwangler, Nathan Furtwangler")]
 [assembly: AssemblyTrademark("Aether Engine (tm)")]
 [assembly: AssemblyCulture("")]
 

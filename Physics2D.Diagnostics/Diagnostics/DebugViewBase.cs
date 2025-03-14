@@ -4,8 +4,11 @@
  */
 
 /*
-* Farseer Physics Engine:
+* Farseer Physics Engine 3, based on Box2D.XNA port:
 * Copyright (c) 2012 Ian Qvist
+* 
+* Box2D.XNA port of Box2D:
+* Copyright (c) 2009 Brandon Furtwangler, Nathan Furtwangler
 */
 
 using Microsoft.Xna.Framework;
