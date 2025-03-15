@@ -1379,6 +1379,7 @@ namespace nkast.Aether.Physics2D.Dynamics
             iterations.VelocityIterations = Settings.VelocityIterations;
             iterations.TOIPositionIterations = Settings.TOIPositionIterations;
             iterations.TOIVelocityIterations = Settings.TOIVelocityIterations;
+            iterations.AutoClearForces = Settings.AutoClearForces;
             Step(dt, ref iterations);
         }
 
@@ -1456,7 +1457,7 @@ namespace nkast.Aether.Physics2D.Dynamics
                 if (Settings.EnableDiagnostics)
                     ContinuousPhysicsTime = TimeSpan.FromTicks(_watch.ElapsedTicks) - (AddRemoveTime + NewContactsTime + ControllersUpdateTime + ContactsUpdateTime + SolveUpdateTime);
 
-                if (Settings.AutoClearForces)
+                if (iterations.AutoClearForces)
                     ClearForces();
             }
             finally
