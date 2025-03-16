@@ -1140,12 +1140,6 @@ namespace nkast.Aether.Physics2D.Collision
                 public Vector2[] Normals;
                 public int Count;
 
-                internal TempPolygon(int maxPolygonVertices)
-                {
-                    Vertices = new Vector2[maxPolygonVertices];
-                    Normals = new Vector2[maxPolygonVertices];
-                    Count = 0;
-                }
             }
 
             public static void Collide(ref Manifold manifold, EdgeShape edgeA, ref Transform xfA, PolygonShape polygonB, ref Transform xfB)
@@ -1160,7 +1154,6 @@ namespace nkast.Aether.Physics2D.Collision
                 // 7. Return if _any_ axis indicates separation
                 // 8. Clip
 
-                TempPolygon tempPolygonB = new TempPolygon(Settings.MaxPolygonVertices);
                 Transform xf;
                 Vector2 centroidB;
                 Vector2 normal0 = new Vector2();
@@ -1366,6 +1359,9 @@ namespace nkast.Aether.Physics2D.Collision
                 }
 
                 // Get polygonB in frameA
+                TempPolygon tempPolygonB = default;
+                tempPolygonB.Vertices = new Vector2[Settings.MaxPolygonVertices];
+                tempPolygonB.Normals = new Vector2[Settings.MaxPolygonVertices];
                 tempPolygonB.Count = polygonB.Vertices.Count;
                 for (int i = 0; i < polygonB.Vertices.Count; ++i)
                 {
