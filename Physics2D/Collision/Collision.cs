@@ -1134,15 +1134,15 @@ namespace nkast.Aether.Physics2D.Collision
             /// <summary>
             /// This holds polygon B expressed in frame A.
             /// </summary>
-            internal struct TempPolygon
+            internal unsafe struct TempPolygon
             {
-                public Vector2[] Vertices;
-                public Vector2[] Normals;
+                public Vector2* Vertices;
+                public Vector2* Normals;
                 public int Count;
 
             }
 
-            public static void Collide(ref Manifold manifold, EdgeShape edgeA, ref Transform xfA, PolygonShape polygonB, ref Transform xfB)
+            public unsafe static void Collide(ref Manifold manifold, EdgeShape edgeA, ref Transform xfA, PolygonShape polygonB, ref Transform xfB)
             {
                 // Algorithm:
                 // 1. Classify v1 and v2
@@ -1359,9 +1359,11 @@ namespace nkast.Aether.Physics2D.Collision
                 }
 
                 // Get polygonB in frameA
+                Vector2* tmpVertices = stackalloc Vector2[Settings.MaxPolygonVertices];
+                Vector2* tmpNormals  = stackalloc Vector2[Settings.MaxPolygonVertices];
                 TempPolygon tempPolygonB = default;
-                tempPolygonB.Vertices = new Vector2[Settings.MaxPolygonVertices];
-                tempPolygonB.Normals = new Vector2[Settings.MaxPolygonVertices];
+                tempPolygonB.Vertices = tmpVertices;
+                tempPolygonB.Normals  = tmpNormals;
                 tempPolygonB.Count = polygonB.Vertices.Count;
                 for (int i = 0; i < polygonB.Vertices.Count; ++i)
                 {
@@ -1560,7 +1562,7 @@ namespace nkast.Aether.Physics2D.Collision
                 manifold.PointCount = pointCount;
             }
 
-            private static EPAxis ComputeEdgeSeparation(ref TempPolygon polygonB, ref Vector2 normal, ref Vector2 v1, bool front)
+            private unsafe static EPAxis ComputeEdgeSeparation(ref TempPolygon polygonB, ref Vector2 normal, ref Vector2 v1, bool front)
             {
                 EPAxis axis;
                 axis.Type = EPAxisType.EdgeA;
@@ -1579,7 +1581,7 @@ namespace nkast.Aether.Physics2D.Collision
                 return axis;
             }
 
-            private static EPAxis ComputePolygonSeparation(ref TempPolygon polygonB, ref Vector2 normal, ref Vector2 v1, ref Vector2 v2, ref Vector2 lowerLimit, ref Vector2 upperLimit, float radius)
+            private unsafe static EPAxis ComputePolygonSeparation(ref TempPolygon polygonB, ref Vector2 normal, ref Vector2 v1, ref Vector2 v2, ref Vector2 lowerLimit, ref Vector2 upperLimit, float radius)
             {
                 EPAxis axis;
                 axis.Type = EPAxisType.Unknown;
