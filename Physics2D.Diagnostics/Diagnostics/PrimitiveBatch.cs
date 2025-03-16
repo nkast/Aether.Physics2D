@@ -15,8 +15,8 @@ namespace nkast.Aether.Physics2D.Diagnostics
     {
         private const int DefaultBufferSize = 500;
 
-        public const float DefaultTriangleListDepth = -0.1f;
-        public const float DefaultLineListDepth     =  0.0f;
+        public const float DefaultTriangleListDepth = -0.0001f;
+        public const float DefaultLineListDepth     =  0.0000f;
 
         // a basic effect, which contains the shaders that we will use to draw our
         // primitives.
