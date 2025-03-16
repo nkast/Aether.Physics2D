@@ -1277,7 +1277,16 @@ namespace nkast.Aether.Physics2D.Dynamics
         public Body Clone(World world = null)
         {
             world = world ?? World;
-            Body body = world.CreateBody(Position, Rotation);
+
+            Body body = new Body();
+            body.Position = Position;
+            body.Rotation = Rotation;
+            body.BodyType = BodyType.Static;
+#if LEGACY_ASYNCADDREMOVE
+            world.AddAsync(body);
+#else
+            world.Add(body);
+#endif
             body._bodyType = _bodyType;
             body._linearVelocity = _linearVelocity;
             body._angularVelocity = _angularVelocity;
