@@ -7,6 +7,7 @@
 /config:
 /profile:Reach
 /compress:True
+/compression:Brotli
 
 #-------------------------------- References --------------------------------#
 
