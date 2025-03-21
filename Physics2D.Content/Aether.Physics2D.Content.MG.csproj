@@ -3,8 +3,8 @@
   <Import Project="..\Package.props" />
   <PropertyGroup>
     <PackageId>Aether.Physics2D.Content.MG</PackageId>
-    <Version>2.1.0.0</Version>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <Version>2.2.0.0</Version>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
     <Description>Aether.Physics2D is a 2D collision detection system.</Description>
     <PackageTags>C# Physics 2D game box2d farseerPhysics farseer MonoGame</PackageTags>
   </PropertyGroup>
