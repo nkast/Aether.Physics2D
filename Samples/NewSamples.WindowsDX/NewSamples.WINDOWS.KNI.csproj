@@ -40,7 +40,7 @@
     <PackageReference Include="nkast.Xna.Framework.Input" Version="4.0.9001" />
     <PackageReference Include="nkast.Xna.Framework.Game" Version="4.0.9001" />
     <PackageReference Include="nkast.Xna.Framework.Storage" Version="4.0.9001" />
-    <PackageReference Include="MonoGame.Framework.WinForms.DX11" Version="4.0.9001.*" />
+    <PackageReference Include="nkast.Kni.Platform.WinForms.DX11" Version="4.0.9001.*" />
     <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.0.9001" />
   </ItemGroup>
 	
