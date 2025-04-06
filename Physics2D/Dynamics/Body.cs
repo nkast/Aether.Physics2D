@@ -776,7 +776,10 @@ namespace nkast.Aether.Physics2D.Dynamics
         }
 
         /// <summary>
-        /// Applies a force at the center of mass.
+        /// Applies a force at the origin position.
+        /// If the origin position is not the same as the center of mass,
+        /// it will generate a torque and affect the angular velocity.
+        /// This wakes up the body.
         /// </summary>
         /// <param name="force">The force.</param>
         public void ApplyForce(ref Vector2 force)
@@ -785,7 +788,10 @@ namespace nkast.Aether.Physics2D.Dynamics
         }
 
         /// <summary>
-        /// Applies a force at the center of mass.
+        /// Applies a force at the origin position.
+        /// If the origin position is not the same as the center of mass,
+        /// it will generate a torque and affect the angular velocity.
+        /// This wakes up the body.
         /// </summary>
         /// <param name="force">The force.</param>
         public void ApplyForce(Vector2 force)
