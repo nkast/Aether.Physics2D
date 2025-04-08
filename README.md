@@ -2,7 +2,7 @@
 
 Aether.Physics2D is a 2D collision detection system.
 
-![Discord](https://img.shields.io/discord/780484381961093172?logo=discord&link=https%3A%2F%2Fdiscord.gg%2F95nPEjZ6mu)
+[![Discord](https://img.shields.io/discord/780484381961093172?logo=discord&link=https%3A%2F%2Fdiscord.gg%2F95nPEjZ6mu)](https://discord.gg/95nPEjZ6mu)
 
 Documentation: https://nkast.github.io/Aether.Physics2D/
 
