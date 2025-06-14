@@ -2,6 +2,11 @@
 
 using System;
 
+#if NET8_0_OR_GREATER
+using System.Runtime.CompilerServices;
+using SysNumerics = System.Numerics;
+#endif
+
 namespace nkast.Aether.Physics2D.Common
 {
     public struct Vector3 : IEquatable<Vector3>
@@ -131,6 +136,18 @@ namespace nkast.Aether.Physics2D.Common
         {
             return left.X != right.X || left.Y != right.Y || left.Z != right.Z;
         }
+
+#if NET8_0_OR_GREATER
+        public static explicit operator Vector3(SysNumerics.Vector3 value)
+        {
+            return Unsafe.BitCast<SysNumerics.Vector3, Vector3>(value);
+        }
+
+        public static explicit operator SysNumerics.Vector3(Vector3 value)
+        {
+            return Unsafe.BitCast<Vector3, SysNumerics.Vector3>(value);
+        }
+#endif
 
         public override string ToString()
         {

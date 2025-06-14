@@ -6,6 +6,10 @@ using Complex = nkast.Aether.Physics2D.Common.Complex;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 #endif
 
+#if NET8_0_OR_GREATER
+using SysNumerics = System.Numerics;
+#endif
+
 namespace nkast.Aether.Physics2D.Common
 {
     public struct Complex
@@ -150,6 +154,25 @@ namespace nkast.Aether.Physics2D.Common
             return new Complex(value.R / mag, -value.i / mag);
         }
         
+
+
+#if NET8_0_OR_GREATER
+        public static explicit operator Complex(SysNumerics.Complex value)
+        {
+            Complex result;
+            result.R = (float)value.Real;
+            result.i = (float)value.Imaginary;
+            return result;
+        }
+
+        public static explicit operator SysNumerics.Complex(Complex value)
+        {
+            return new SysNumerics.Complex(
+                (double)value.R,
+                (double)value.i);
+        }
+#endif
+
         public override string ToString()
         {
             return String.Format("{{R: {0} i: {1} Phase: {2} Magnitude: {3}}}", R, i, Phase, Magnitude);
