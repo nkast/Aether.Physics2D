@@ -1,4 +1,5 @@
-﻿/*******************************************************************************
+﻿// From https://github.com/klutch/Box2DFluid
+/*******************************************************************************
  * Original Java code:
  * Copyright (c) 2013, Daniel Murphy
  * All rights reserved.
