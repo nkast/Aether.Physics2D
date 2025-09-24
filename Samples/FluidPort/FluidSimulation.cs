@@ -21,16 +21,27 @@ namespace FluidPort
 {
     public class FluidSimulation
     {
+        /// <summary>If true, the simulation will render the spatial grid cells for debugging or visualization.</summary>
         public const bool DRAW_CELLS = false;
+        /// <summary>The maximum number of fluid particles allowed in the simulation at any time.</summary>
         public const int MAX_PARTICLES = 20000;
+        /// <summary>The maximum number of neighboring particles considered for each particle during force and pressure calculations.</summary>
         public const int MAX_NEIGHBORS = 75;
+        /// <summary>The width and height of each grid cell used for spatial partitioning. Should be close to <see cref="IDEAL_RADIUS"/>.</summary>
         public const float CELL_SIZE = 0.6f;
+        /// <summary>The base radius of each fluid particle, used for collision and interaction calculations.</summary>
         public const float RADIUS = 0.9f;
+        /// <summary>The viscosity coefficient for the fluid. Higher values increase damping and reduce jitter.</summary>
         public const float VISCOSITY = 0.004f;
+        /// <summary>The ideal interaction radius for particles. Particles within this distance are considered neighbors and interact.</summary>
         public const float IDEAL_RADIUS = 50f;
+        /// <summary>The square of <see cref="IDEAL_RADIUS"/>. Used for efficient distance comparisons.</summary>
         public const float IDEAL_RADIUS_SQ = IDEAL_RADIUS * IDEAL_RADIUS;
+        /// <summary>A scaling factor for positions and velocities, calculated as <see cref="IDEAL_RADIUS"/> divided by <see cref="RADIUS"/>.</summary>
         public const float MULTIPLIER = IDEAL_RADIUS / RADIUS;
+        /// <summary> The simulation time step (delta time) per update, in seconds.</summary>
         public const float DT = 1f / 60f;
+
         private int _numActiveParticles = 0;
         private Particle[] _liquid;
         private List<int> _activeParticles;

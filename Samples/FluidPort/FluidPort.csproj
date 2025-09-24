@@ -33,7 +33,6 @@
     </KniContentReference>
     <Compile Include="FluidSimulation.cs" />
     <Compile Include="Particle.cs" />
-    <Compile Include="PrimitiveBatch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
 	<ProjectReference Include="..\..\Physics2D\Aether.Physics2D.KNI.csproj">
