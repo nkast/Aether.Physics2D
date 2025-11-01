@@ -236,6 +236,9 @@ namespace nkast.Aether.Physics2D.Dynamics
         /// </summary>
         private void Refilter()
         {
+            if (Body == null)
+                return;
+
             // Flag associated contacts for filtering.
             ContactEdge edge = Body.ContactList;
             while (edge != null)
