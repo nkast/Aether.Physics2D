@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------------
 
 
-#ifdef MGFX  // Macros for targetting HLSL 4.0
+#ifdef __KNIFX__ // Macros for targetting HLSL 4.0
 
 #define TECHNIQUE(name, vsname, psname ) \
 	technique name { pass { VertexShader = compile vs_4_0_level_9_1 vsname (); PixelShader = compile ps_4_0_level_9_1 psname(); } }
@@ -19,7 +19,7 @@
 #endif
 
 
-#ifdef SM4  // Macros for targetting HLSL 4.0
+#ifdef __DIRECTX__ // Macros for targetting HLSL 4.0
 
 
 #define BEGIN_CONSTANTS     cbuffer Parameters : register(b0) {
