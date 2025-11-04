@@ -1,0 +1,25 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:True
+/compression:Brotli
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin debug.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:debug.spritefont
+
+#begin font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:font.spritefont
