@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.BlazorGL", "Samp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.BlazorGL", "Samples\Samples.BlazorGL\Samples.BlazorGL.csproj", "{64069CE4-0D08-4AF3-A7E4-173EC5546B4F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluidPort", "Samples\FluidPort\FluidPort.csproj", "{182898E6-224F-4C47-9FDF-E701D330A86F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{64069CE4-0D08-4AF3-A7E4-173EC5546B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64069CE4-0D08-4AF3-A7E4-173EC5546B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64069CE4-0D08-4AF3-A7E4-173EC5546B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182898E6-224F-4C47-9FDF-E701D330A86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182898E6-224F-4C47-9FDF-E701D330A86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182898E6-224F-4C47-9FDF-E701D330A86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182898E6-224F-4C47-9FDF-E701D330A86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{3FAFCF7E-F7BF-4421-9616-C74B80E30B6A} = {647EE16B-DEB6-4BB0-9383-9F9BF714BEB1}
 		{3ADF6F59-BE9B-4B8A-B05B-50B6F7AA97C6} = {95CC7850-C716-48DC-84EC-4735CDABF818}
 		{64069CE4-0D08-4AF3-A7E4-173EC5546B4F} = {95CC7850-C716-48DC-84EC-4735CDABF818}
+		{182898E6-224F-4C47-9FDF-E701D330A86F} = {95CC7850-C716-48DC-84EC-4735CDABF818}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A47FC0B-72D2-48AA-941E-83B5F7BF4498}
